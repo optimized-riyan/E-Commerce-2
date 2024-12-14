@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+}
+
+.img {
+    height: 250px;
+    aspect-ratio: 3/4.8;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 10%;
+    font-size: large;
+}
+
+@media all and (min-width: 500px) {
+    .img {
+        height: 400px;
+    }
+
+    .title {
+        font-size: x-large;
+        top: 80%;
+    }
+}
