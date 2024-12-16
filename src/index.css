@@ -67,6 +67,21 @@ button:focus-visible {
   }
 } */
 
+@font-face {
+    font-family: Futura Light;
+    src: url(https://static.vitra.com/static/fonts/vfutura-light.woff2);
+}
+
+@font-face {
+    font-family: Futura Medium;
+    src: url(https://static.vitra.com/fonts/vfutura-medium.woff2);
+}
+
+@font-face {
+    font-family: Futura Regular;
+    src: url(https://static.vitra.com/fonts/vfutura-regular.woff2);
+}
+
 * {
-    font-family: 'Arial', sans-serif;
+    font-family: Futura Light, sans-serif;
 }
