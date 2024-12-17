@@ -7,9 +7,10 @@ align-content: center;
 overflow: hidden;
 margin-bottom: 100vh;
 }
-img{
-  width: 25%;
+.img{
+  width: 35%;
   margin: 10px;
+  min-width: 100px;
 }
 .text{
   flex:1;

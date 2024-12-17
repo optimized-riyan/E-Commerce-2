@@ -1,13 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import styles from './FancyButton.module.css'
-const FancyButton = () => {
+const FancyButton = ({text, width = '230px', margin = '0'}) => {
   
 
     return (
-     
-      <div>
-      <button className={styles.button}>MORE DETAILS</button>
-      </div>
+      <button className={styles.button} style={{ width, margin }}>{text}</button>
     );
   };
   
