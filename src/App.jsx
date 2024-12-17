@@ -2,6 +2,7 @@ import Carousel from './HomePage/Carousal';
 import Login from './LoginPage/Login';
 import Parallaxx from './HomePage/parallaxx';
 import FancyButton from './FancyButton';
+import Footer from './Footer/Footer';
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <Login />
             <Carousel />
             <Parallaxx/>
+            <Footer/>
         </>
     );
 }
