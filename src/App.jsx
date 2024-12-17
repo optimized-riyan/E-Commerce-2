@@ -5,12 +5,11 @@ import FancyButton from './fancyButton';
 
 function App() {
     return (
-    <>
-    <Login />
-    <Parallaxx/>
-    </>
-        // <Carousel />
-        
+        <>
+            <Login />
+            {/* <Carousel /> */}
+            {/* <Parallaxx/> */}
+        </>
     );
 }
 
