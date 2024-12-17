@@ -1,16 +1,15 @@
 import Carousel from './HomePage/Carousal';
 import Login from './LoginPage/Login';
 import Parallaxx from './HomePage/parallaxx';
-import FancyButton from './fancyButton';
+import FancyButton from './FancyButton';
 
 function App() {
     return (
-    <>
-    <Login />
-    <Parallaxx/>
-    </>
-        // <Carousel />
-        
+        <>
+            <Login />
+            {/* <Carousel /> */}
+            <Parallaxx/>
+        </>
     );
 }
 

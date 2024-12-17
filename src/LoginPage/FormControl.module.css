@@ -1,0 +1,15 @@
+.innerContainer {
+    max-width: 600px;
+    margin: auto;
+}
+
+.label {
+    font-size: small;
+    font-family: Futura Regular;
+}
+
+.input {
+    font-size: large;
+    padding: .5rem .7rem;
+    width: 100%;
+}
