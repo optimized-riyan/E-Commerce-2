@@ -8,7 +8,8 @@ export default function Form() {
             <h1 className={styles.title}>Login</h1>
             <FormControl label="Email" type="email" rootStyleOverride={{ margin: '1rem 0' }} />
             <FormControl label="Password" />
-            <FancyButton text="LOGIN" width="230px" />
+            <FancyButton text="LOGIN" width="230px" margin="3rem auto .5rem auto" />
+            <FancyButton text="FORGOT PASSWORD?" width="230px" margin=".5rem auto 3rem auto" />
         </div>
     );
 }
