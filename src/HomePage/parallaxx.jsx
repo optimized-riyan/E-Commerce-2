@@ -3,7 +3,7 @@ import { Parallax } from "react-scroll-parallax";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { useParallax } from 'react-scroll-parallax';
 import styles from './Parallax.module.css'
-import FancyButton from "../FancyButton";
+import FancyButton from '../FancyButton';
 const Parallaxx = () => {
     return (
       <ParallaxProvider>
