@@ -7,7 +7,7 @@ function App() {
     return (
         <>
             <Login />
-            {/* <Carousel /> */}
+            <Carousel />
             <Parallaxx/>
         </>
     );
