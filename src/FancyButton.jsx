@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import styles from './FancyButton.module.css'
-const FancyButton = () => {
+const FancyButton = ({text}) => {
   
 
     return (
      
       <div>
-      <button className={styles.button}>MORE DETAILS</button>
+      <button className={styles.button}>{text}</button>
       </div>
     );
   };
