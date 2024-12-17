@@ -63,7 +63,7 @@ export default function Video() {
         <h1 style={{ fontFamily: 'Quicksand', fontWeight: 'bold' }}>
           Home Stories for Winter
         </h1>
-        <p style={{ fontFamily: 'Quicksand', fontSize: '1.2em', margin: '10px 0' }}>
+        <p style={{ fontFamily: 'Quicksand', fontSize: '1.2em', margin: '10px 0', width:'50%'}}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id facere iste deleniti odio earum eaque quis molestiae inventore ratione.
         </p>
         <button
