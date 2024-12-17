@@ -1,0 +1,19 @@
+
+.button{
+    background-color: transparent;
+    color: #333;
+    border-top: #333 2px solid;
+    border-bottom: #333 2px solid;
+    border-radius: 0px;
+    width: 120%;
+    transition: 0.3s ease-in-out;
+    border-left: transparent;
+    border-right: transparent;
+    padding: 10px;
+  }
+  
+  .button:hover{
+    color:white;
+    background-color: #333;
+    border-color: #333;
+  }
