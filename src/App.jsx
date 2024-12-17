@@ -1,7 +1,11 @@
-import Carousel from './Home/Carousal';
+import Carousel from './HomePage/Carousal';
+import Login from './LoginPage/Login';
 
 function App() {
-    return <Carousel />;
+    return (
+        // <Carousel />
+        <Login />
+    );
 }
 
 export default App;

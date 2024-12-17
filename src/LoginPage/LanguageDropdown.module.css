@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    display: flex;
+}
+
+.list {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    list-style: none;
+    display: none;
+    cursor: pointer;
+}
+
+.listItem, .langDisplay {
+    background: white;
+    padding: .4rem 1rem;
+    font-size: large;
+}
+
+.listItem:hover {
+    color: pink;
+}
+
+.langDisplay {
+    padding-right: .4rem;
+}
+
+.container:hover .list {
+    display: block;
+}

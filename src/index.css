@@ -85,3 +85,11 @@ button:focus-visible {
 * {
     font-family: Futura Light, sans-serif;
 }
+
+p, ul {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}

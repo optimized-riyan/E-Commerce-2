@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .3rem;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid gray;
+}
+
+.title {
+    font-family: Futura Medium;
+    margin: 0;
+}
+
+.contRight {
+    display: flex;
+    gap: 1rem;
+}
+
+.phone:hover {
+    fill: pink;
+}
