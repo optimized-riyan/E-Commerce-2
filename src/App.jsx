@@ -8,11 +8,12 @@ import Form from './LoginPage/Form';
 function App() {
     return (
         <>
-            {/* <Login />
-            {/* <Carousel /> */}
+           
            
 
             <Router>
+           <Parallaxx/>
+            <Carousel />
                   <Routes>
                     <Route path="/" element={<Form />} />
                     <Route path="/userdata" element={<UserData />} />
