@@ -7,7 +7,7 @@ align-content: center;
 overflow: hidden;
 margin-bottom: 100vh;
 }
-img{
+.img{
   width: 35%;
   margin: 10px;
   min-width: 100px;
