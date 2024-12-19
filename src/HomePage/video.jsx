@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fontsource/dancing-script';
-import '@fontsource/fira-sans';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '@fontsource/dancing-script';
+// import '@fontsource/fira-sans';
 import '@fontsource/quicksand';
 
 export default function Video() {
@@ -54,7 +54,7 @@ export default function Video() {
       <video
         ref={videoRef}
         style={videoStyle}
-        src="src/assets/videos/2.mp4"
+        src="src/assets/Home/2.mp4"
         autoPlay
         muted
         loop
