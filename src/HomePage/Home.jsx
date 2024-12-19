@@ -12,15 +12,12 @@ import UserData from './userdata';
 import CartDetails from '../Cart/Cart';
 export default function Home() {
     return (
-      <>
-        <Navbar />
+        <>
             <Video />
             <Catalogue />
             <Parallaxx />
             <AboutVitra />
             <Carousal margin='1rem 0 6rem 0' />
-            <Footer />
-        <CartDetails />
-                </>
+        </>
     );
 }
