@@ -8,19 +8,19 @@ export default function NavBar() {
         <>
     <header> 
     <div className={styles.box}>
-        <nav>
+        <nav className={styles.navs}>
             <div className={styles.logo}>
-                <h1 className={styles.logoInside}>Vitra.</h1>
+              vitra.
             </div>
         
         <ul className={styles.navLink}>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" >About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Magazines</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Proffesionals</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Home</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#" >About</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Contact</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Products</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Magazines</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Services</a></li>
+            <li className={styles.lists}><a className={styles.alist} href="#">Professionals</a></li>
 
         </ul>
         <div className={styles.icon}>

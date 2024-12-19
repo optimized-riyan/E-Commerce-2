@@ -16,9 +16,9 @@ const items = [
     {title: 'Office Chairs', imgSrc: officeChairsImg},
 ];
 
-export default function Carousel() {
+export default function Carousel({margin = '0'}) {
     return (
-        <div>
+        <div style={{ margin }}>
             <h1 className={styles.heading}>Product Categories</h1>
             <ul className={styles.carouselList}>
                 {items.map(({title, imgSrc}) => <li key={crypto.randomUUID()}><CarousalItem title={title} imgSrc={imgSrc} /></li>)}

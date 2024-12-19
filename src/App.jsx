@@ -1,28 +1,24 @@
-import Carousel from "./HomePage/Carousal";
-import Login from "./LoginPage/Login";
-import Parallaxx from "./HomePage/parallaxx";
-import FancyButton from "./FancyButton";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import UserData from "./HomePage/userdata";
-import Form from "./LoginPage/Form";
-import ProductPage from "./ProductPage/ProductPage";
-import ProductDetail from "./ProductDetail/ProductDetail";
+import Login from './LoginPage/Login';
+import Home from './HomePage/Home';
+import ProductPage from './ProductPage/ProductPage';
+import UserData from './HomePage/userdata';
+import CartDetails from "./Cart/Cart";
+import AboutUs from './About/AboutUs';
 
 function App() {
-  return (
-    <>
-      <Router>
-        {/* <Parallaxx />
-        <Carousel /> */}
-        <Routes>
-          <Route path="/" element={<Form />} />
-          <Route path="/userdata" element={<UserData />} />
-          <Route path="/products" element={<ProductPage />} />
-          <Route path="/products/detail/:id" element={<ProductDetail />} />
-        </Routes>
-      </Router>
-    </>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/products" element={<ProductPage />} />
+                <Route path="/userdata" element={<UserData />} />
+                <Route path="/cart" element={<CartDetails />}/>
+                <Route path="/about" element={<AboutUs />}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
