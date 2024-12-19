@@ -93,7 +93,7 @@
   transition: height 0.2s linear, width 0.2s linear 0.2s;
 }
 
-button::after {
+.cartButton::after {
   height: 0;
   width: 0;
   content: "";
@@ -102,7 +102,7 @@ button::after {
   box-sizing: border-box;
   right: 0;
 }
-button:hover::after {
+.cartButton:hover::after {
   height: 70px;
   width: 220px;
   border: 2px solid black;

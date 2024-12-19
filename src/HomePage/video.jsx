@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "@fontsource/quicksand"; // Import Quicksand
+import { useNavigate } from "react-router-dom";
 
 export default function Video() {
   const [isHovered, setIsHovered] = useState(false);
-
+  const navigate = useNavigate();
   const videoContainerStyle = {
     position: "relative",
     height: "480px",
@@ -90,6 +91,9 @@ export default function Video() {
     event.preventDefault();
   };
 
+  const handleBuyNowClick = () => {
+    navigate("/products");
+  };
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
@@ -113,7 +117,7 @@ export default function Video() {
           handpicked selection of furniture, art, and accessories is designed to
           reflect your unique style and elevate your home.
         </p>
-        <button type="button" style={BStyle}>
+        <button type="button" style={BStyle} onClick={handleBuyNowClick}>
           Buy Now
         </button>
       </div>
