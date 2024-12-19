@@ -11,8 +11,10 @@ Team Member:
 ## Pages
 
 - [x] Login
-- [ ] Checkout / Cart
+- [ ] Checkout
+- [x]  Cart
 - [x] Product List
+- [ ] Product Details
 - [ ] About Us
-- [ ] Contact Us
+- [x] Contact Us
 - [ ] User Profile
