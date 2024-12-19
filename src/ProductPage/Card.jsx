@@ -1,10 +1,16 @@
-import React from 'react'
-import myStyle from './ProductPage.module.css'
+import React from "react";
+import myStyle from "./ProductPage.module.css";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
     <div>
-      <div className={myStyle.card}>
+      <Link
+        className={myStyle.linkCard}
+        to={`/products/detail/${props.id}`}
+        key={props.id}
+      >
+        <div className={myStyle.card}>
           <div className={myStyle.card_img_container}>
             <img className={myStyle.card_img} src={props.img} alt={props.alt} />
           </div>
@@ -14,10 +20,10 @@ const Card = (props) => {
             {/* <p>{props.description}</p> */}
             {/* <h4>${props.price}</h4> */}
           </div>
-      </div>
+        </div>
+      </Link>
     </div>
+  );
+};
 
-  )
-}
-
-export default Card
+export default Card;
