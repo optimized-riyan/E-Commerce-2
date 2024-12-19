@@ -1,0 +1,134 @@
+{
+  "yehaidata": [
+    {
+      "id": 1,
+      "img": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
+      "alt": "Placeholder Image -1",
+      "title": "Annibale Colombo Sofa",
+      "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
+      "price": 7500.0
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
+      "alt": "Placeholder Image-2",
+      "title": "Bedside Table African Cherry",
+      "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
+      "price": 2000.0
+    },
+    {
+      "id": 3,
+      "img": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png",
+      "alt": "Placeholder Image-3",
+      "title": "Knoll Saarinen Executive Conference Chair",
+      "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
+      "price": 3600.0
+    },
+    {
+      "id": 4,
+      "img": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
+      "alt": "Placeholder Image-4",
+      "title": "Wooden Bathroom Sink With Mirror",
+      "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
+      "price": 2650.0
+    },
+    {
+      "id": 5,
+      "img": "https://ik.imagekit.io/2xkwa8s1i/img/sofa-sets/skiver/6seater/WSFASKRL3CLRTN/1.jpg?tr",
+      "alt": "Placeholder Image-5",
+      "title": "Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise)",
+      "description": "The Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise) combines modern elegance with spacious comfort, featuring high-quality fabric upholstery, sturdy construction, and a versatile chaise for ultimate relaxation. ",
+      "price": 13700.0
+    },
+    {
+      "id": 6,
+      "img": "https://ik.imagekit.io/2xkwa8s1i/img/study-tables/lifestyle/nayena.jpg?tr=w-1200",
+      "alt": "Placeholder Image",
+      "title": "Nayena Study Table",
+      "description": "The Nayena Study Table offers a perfect blend of style and practicality, featuring a sleek design with ample workspace and storage options, making it an ideal addition to any home office or study area.",
+      "price": 8750.0
+    },
+    {
+      "id": 7,
+      "img": "https://ik.imagekit.io/2xkwa8s1i/img/engineered-wood-bed/taurus/new/0.jpg?tr=w-2544",
+      "alt": "Placeholder Image",
+      "title": "Taurus Engineered Wood Bed ",
+      "description": "The Taurus Engineered Wood Bed combines modern design with practicality, offering a spacious sleeping area and built-in storage to maximize your bedroom space, crafted from durable engineered wood for lasting quality.",
+      "price": 33800.0
+    },
+    {
+      "id": 8,
+      "img": "https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/cashmere_wardrobe/WWRB4S4D2MH2CASHMEREPWF/1.jpg?tr=w-1200",
+      "alt": "Placeholder Image",
+      "title": "Cashmere Plus 4 Door Wardrobe ",
+      "subtitle": " Storage Solution with Ample Space and Functionality",
+      "description": "This is a sample description for item 8.",
+      "price": 3850.0
+    },
+    {
+      "id": 9,
+      "img": "https://static.vitra.com/media-resized/ybhyb1BxGPbG2QB_RPImN2I0inAVkxAycmP1HRQX6-A/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNzg0MTkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zMzIyMzU4MC5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Grand Repos",
+      "description": "A synchronised mechanism is concealed beneath the upholstery of the Grand Repos wing chair and can be locked in any position, for optimum back support and utmost comfort.",
+      "price": 6900.0
+    },
+    {
+      "id": 10,
+      "img": "https://static.vitra.com/media-resized/SBz8-3I8RhatFNXa3LHIYK_3Mtx0iFfP4XfkUd8LUW4/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNjQ3ODAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjExNzc2NS5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Coffee Table",
+      "description": "In creating his design for the Coffee Table, Isamu Noguchi translated the biomorphic aesthetic of his sculptural works into a piece of furniture with distinctive organic forms.",
+      "price": 5950.0
+    },
+    {
+      "id": 11,
+      "img": "https://static.vitra.com/media/asset/5350129/storage/v_fullbleed_1440x/58911470.jpg",
+      "alt": "Placeholder Image",
+      "title": "Alcove Plus Desk",
+      "description": "Alcove Plus Desk is a touchdown workstation that shields users both visually and acoustically, making it ideally suited for focussed tasks.",
+      "price": 5000.0
+    },
+    {
+      "id": 12,
+      "img": "https://static.vitra.com/media-resized/F05oasobLb3aUNq7q7K9MQ7iuS3YzPKnwnJgjDiGv8c/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODA1ODgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI2MzMzNS5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Eames Tandem Seating ETS",
+      "description": "Designed by Charles and Ray Eames for use in waiting areas, the robust Tandem Seating system has proven its quality over a period of decades, providing a comfortable place to sit in airports, train stations and other public spaces.",
+      "price": 14050.0
+    },
+    {
+      "id": 13,
+      "img": "https://static.vitra.com/media-resized/BO5MPjni3c8gL6Aktz4LPeIPiQvPW7KAK9ZVpotwhP0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODQ1Mjkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zOTExMzY5OS5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Dining Table",
+      "description": "The Dining Table by Isamu Noguchi is one of the most elegant dining tables in the history of twentieth-century furniture design. ",
+      "price": 3100.0
+    },
+    {
+      "id": 14,
+      "img": "https://static.vitra.com/media-resized/ny3XwtffPHY2kE2rTVTkSabMYYqWBrrvM-cpWL4JEFw/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzE5NDczNDAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8yODgzOTQxMC5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Wall Clocks - Sunflower Clock",
+      "description": "With his collection of Wall Clocks (1949-1960), George Nelson conceived a wide array of timepieces, many of which have since become icons of 1950s design.",
+      "price": 1150.0
+    },
+    {
+      "id": 15,
+      "img": "https://static.vitra.com/media-resized/AKwCN-rBT5NyQpWB5QcDXKR9ZNey-rNec1qu_FisjRk/fill/1440/576/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNjQ3Nzcvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zMzI2NDMxMy5qcGc.jpg",
+      "alt": "Placeholder Image",
+      "title": "Wiggle Side Chair",
+      "subtitle": "Sample Subtitle 15",
+      "description": "The Wiggle Side Chair is part of Frank Gehry's 1972 furniture series 'Easy Edges', in which he succeeded in bringing a new aesthetic dimension to such an everyday material as cardboard. .",
+      "price": 3200.0
+    },
+    {
+      "id": 16,
+      "img": "https://ik.imagekit.io/2xkwa8s1i/img/engineered-wood-bed/taurus/new/0.jpg?tr=w-2544",
+      "alt": "Placeholder Image",
+      "title": "Taurus Engineered Wood Bed ",
+      "description": "The Taurus Engineered Wood Bed combines modern design with practicality, offering a spacious sleeping area and built-in storage to maximize your bedroom space, crafted from durable engineered wood for lasting quality.",
+      "price": 33800.0
+    }
+  ]
+}
