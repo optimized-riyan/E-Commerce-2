@@ -15,6 +15,6 @@ Team Member:
 - [x]  Cart
 - [x] Product List
 - [ ] Product Details
-- [ ] About Us
+- [x] About Us
 - [x] Contact Us
 - [ ] User Profile
