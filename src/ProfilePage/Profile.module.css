@@ -1,0 +1,37 @@
+.container {
+    margin: 0 2rem;
+}
+
+.fieldTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableData {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.fieldContainer {
+    display: flex;
+    position: relative;
+}
+
+.fieldTitle {
+    font-weight: bolder;
+    width: 20rem;
+    font-family: Roboto, sans-serif;
+}
+
+.fieldValue {
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+}
+
+.editBtnContainer {
+    height: 40%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-10%, -90%);
+}
