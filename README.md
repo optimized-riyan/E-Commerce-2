@@ -14,7 +14,7 @@ Team Member:
 - [ ] Checkout
 - [x]  Cart
 - [x] Product List
-- [ ] Product Details
+- [x] Product Details
 - [x] About Us
 - [x] Contact Us
 - [ ] User Profile
