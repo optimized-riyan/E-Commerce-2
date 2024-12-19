@@ -7,22 +7,20 @@ import Carousal from './Carousal';
 import Footer from '../Footer/Footer';
 import Form from '../LoginPage/Form';
 import { Route, Router, Routes } from 'react-router-dom';
-
+import UserData from './userdata';
+// import Cart from '../Cart/Cart';
+import CartDetails from '../Cart/Cart';
 export default function Home() {
     return (
-        <>
-            <Navbar />
+      <>
+        <Navbar />
             <Video />
             <Catalogue />
             <Parallaxx />
             <AboutVitra />
             <Carousal margin='1rem 0 6rem 0' />
             <Footer />
-           
-                
-                <Form />
-             
-
-        </>
+        <CartDetails />
+                </>
     );
 }
