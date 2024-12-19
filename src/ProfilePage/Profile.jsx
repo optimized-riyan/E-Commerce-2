@@ -1,23 +1,35 @@
 import styles from './Profile.module.css';
 import FancyButton from '../FancyButton';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Profile() {
+    const [{firstName, lastName, username, email}, setUser] = useState({});
+
+    useEffect(() => {
+        axios.get('https://dummyjson.com/users/1')
+            .then(response => {
+                setUser(curr => response.data);
+            })
+            .catch(error => console.error(error));
+    }, []);
+
     return (
         <div className={styles.container}>
             <h1 className={styles.helloMsg}>HELLO RIYAN</h1>
             <table className={styles.fieldTable}>
                 <tbody>
                     <tr>
-                        <td className={styles.tableData}><Field title='FIRST NAME' value='RIYAN' /></td>
+                        <td className={styles.tableData}><Field title='FIRST NAME' value={firstName} /></td>
                     </tr>
                     <tr>
-                        <td className={styles.tableData}><Field title='LAST NAME' value='GONSALVES' /></td>
+                        <td className={styles.tableData}><Field title='LAST NAME' value={lastName} /></td>
                     </tr>
                     <tr>
-                        <td className={styles.tableData}><Field title='USERNAME' /></td>
+                        <td className={styles.tableData}><Field title='USERNAME' value={username} /></td>
                     </tr>
                     <tr>
-                        <td className={styles.tableData}><Field title='EMAIL ADDRESS' /></td>
+                        <td className={styles.tableData}><Field title='EMAIL ADDRESS' value={email} /></td>
                     </tr>
                 </tbody>
             </table>
