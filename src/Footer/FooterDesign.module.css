@@ -29,6 +29,7 @@
     font-size: 16px;
     line-height: 17px;
     margin-bottom: 0.9rem;
+    
 }
     
 
@@ -40,6 +41,7 @@
 a{
     color: rgb(232, 229, 229);
     text-decoration: none;
+    
 }
 
 a:hover{
@@ -73,14 +75,15 @@ a:hover{
     cursor: pointer;
 }
 
+.copyright{
+    font-size: 12px;
+    font-family: sans-serif;
+}
 .footerCopyright{
-    font-size: 14px;
-    line-height: 15px;
-    font-weight: 600;
+
     color: rgb(232, 229, 229);
     text-align: center;
     margin-top: 2rem;
-    font-family: sans-serif;
     
 }
 
@@ -89,12 +92,3 @@ hr{
     width: 100%;
 }
 
-@media screen  and (max-width: 400px){
-    .footerLinks div{
-        margin: 1rem 0;
-    }
-    .footerBelow {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
