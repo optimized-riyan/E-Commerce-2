@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import data from "./data/dbproduct.json";
 import ProductPageBody from "./ProductPageBody";
-import myStyle from './ProductPage.module.css'
+import myStyle from "./ProductPage.module.css";
 
 const ProductPage = () => {
   return (
@@ -10,7 +10,7 @@ const ProductPage = () => {
       <div className="prod-page-body">
         <ProductPageBody />
       </div>
-      <h1>Products</h1>
+      <h1 className={myStyle.productHeading}>Products</h1>
       <div className={myStyle.grid}>
         {data.yehaidata.map((item) => {
           return (
