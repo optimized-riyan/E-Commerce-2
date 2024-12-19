@@ -19,7 +19,9 @@ function ProductDetail() {
 
         <p className={style.desc}>{item.description}</p>
 
-        <p className={style.price}>Price: $ {item.price}</p>
+        <p className={style.price}>
+          Price: {"\u20B9"} {item.price}
+        </p>
 
         <button className={style.cartButton}>
           Add To Cart
