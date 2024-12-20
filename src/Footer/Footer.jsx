@@ -27,10 +27,10 @@ const Footer = () => {
           <div className={styles.footerLinksDiv}>
             <h4 className={styles.heading}>Contact</h4>
             <a href="#">
-              <p className={styles.para}>Contact Vitra</p>
+              <p className={styles.para}>Contact LuxeLiving</p>
             </a>
             <a href="#">
-              <p className={styles.para}>Find Vitra</p>
+              <p className={styles.para}>Find LuxeLiving</p>
             </a>
             <a href="#">
               <p className={styles.para}>Subscribe to the newsletter</p>
@@ -49,9 +49,9 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.footerLinksDiv}>
-            <h4 className={styles.heading}>About Vitra</h4>
+            <h4 className={styles.heading}>About LuxeLiving</h4>
             <a href="#">
-              <p className={styles.para}>Vitra Campus</p>
+              <p className={styles.para}>LuxeLiving Campus</p>
             </a>
           </div>
 

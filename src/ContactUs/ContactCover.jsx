@@ -20,7 +20,7 @@ const StyledImg = styled.img`
   }
 `;
 
-export default function Image() {
+export default function ContactCover() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 400);
 
   useEffect(() => {
