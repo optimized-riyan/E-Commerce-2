@@ -10,6 +10,7 @@ import { Route, Router, Routes } from 'react-router-dom';
 import UserData from './userdata';
 // import Cart from '../Cart/Cart';
 import CartDetails from '../Cart/Cart';
+import CheckOut from '../Checkout/Checkout';
 export default function Home() {
     return (
       <>
@@ -20,7 +21,7 @@ export default function Home() {
             <AboutVitra />
             <Carousal margin='1rem 0 6rem 0' />
             <Footer />
-        <CartDetails />
+        <CheckOut />
                 </>
     );
 }
