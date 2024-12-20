@@ -1,4 +1,4 @@
-p{
+.para{
     margin: 20px;
 }
 .jj{
@@ -14,10 +14,13 @@ p{
     width: 20%;
 }
 
-text{
+.text{
+    display: flex;
+    flex-direction: row;
     flex:1;
-    border-width: 5px;
-    border-style: solid;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px gray solid;
 
 }
 
@@ -33,13 +36,21 @@ text{
     margin: 10px;
 }
 
-.product{
+.product {
     display: "flex";
     flex-direction: "row";
-    flex-wrap: "wrap";
-    border: "1px solid #ddd";
+    /* flex-wrap: "wrap"; */
+    /* border: "1px solid #ddd"; */
+    background-color: red;
+    margin: 10px;
     padding: "10px";
     margin-bottom: "10px";
     align-items: "center";
     align-content: "center";
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
