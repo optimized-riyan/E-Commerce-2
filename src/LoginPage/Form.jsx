@@ -3,14 +3,17 @@ import styles from './Form.module.css';
 import FancyButton from '../FancyButton';
 
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import UserContext from "../UserContext";
+
 export default function Form() {
   const [userData, setUserData]=useState([])
    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
+    const {setUser} = useContext(UserContext);
 
     const getAPIData = async () => {
     try{
@@ -39,15 +42,8 @@ useEffect(()=>{
     );
     if (user) {
       console.log('Success');
-      navigate("/userdata", {
-        state: {
-          id: user.id,
-          email: user.email,
-          name: `${user.firstName} ${user.lastName}`,
-          address: user.address,
-          image: user.image,
-        },
-      });
+      navigate("/profile");
+      setUser(user);
     } else {
       console.log("Invalid email or password");
     }

@@ -6,7 +6,7 @@ export default function FormControl({label = 'No Label', type = 'text', rootStyl
         <div className={styles.outerContainer} style={rootStyleOverride}>
             <div className={styles.innerContainer}>
                 <label htmlFor={inputId} className={styles.label}>{label}</label><br />
-                <input className={styles.input} type="text" id={inputId}  onChange={onChange}/>
+                <input className={styles.input} type={type} id={inputId}  onChange={onChange}/>
             </div>
         </div>
     );

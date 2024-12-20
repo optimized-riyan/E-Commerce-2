@@ -1,17 +1,16 @@
 import styles from './Profile.module.css';
 import FancyButton from '../FancyButton';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import UserContext from '../UserContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
-    const [{firstName, lastName, username, email}, setUser] = useState({});
+    const { user: {firstName, lastName, username, email} } = useContext(UserContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('https://dummyjson.com/users/1')
-            .then(response => {
-                setUser(curr => response.data);
-            })
-            .catch(error => console.error(error));
+        if (!firstName) navigate('/login');
     }, []);
 
     return (
