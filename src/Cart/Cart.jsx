@@ -35,6 +35,7 @@ const CartDetails = () => {
       <h1>Cart Details</h1>
 
       {cart && (
+        <>
         <div className="cart-details" style={{ marginTop: '20px' }}>
           {cart.products.map((product) => (
             <div className={styles.product} key={product.id} >
@@ -73,16 +74,17 @@ const CartDetails = () => {
             </div>
           ))}
         </div>
+        <div style={{marginTop: "20px",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid",}}>
+            <h2 style={styles.h2}>Cart ID: {cart.id}</h2>
+                <p>Total Products: {cart.totalProducts}</p>
+                <p>Total Quantity: {cart.totalQuantity}</p>
+                <p>Total Price: {cart.total}</p>
+                <p>Discounted Total: {cart.discountedTotal}</p>
+                
+        </div>
+        </>
       )}
 
-      <div style={{marginTop: "20px",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid",}}>
-        <h2 style={styles.h2}>Cart ID: {cart.id}</h2>
-            <p>Total Products: {cart.totalProducts}</p>
-            <p>Total Quantity: {cart.totalQuantity}</p>
-            <p>Total Price: {cart.total}</p>
-            <p>Discounted Total: {cart.discountedTotal}</p>
-            
-      </div>
        <CheckOut/>
     </div>
   );
