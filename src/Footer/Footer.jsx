@@ -74,7 +74,7 @@ const Footer = () => {
         <hr></hr>
 
         <div className={styles.footerCopyright}>
-          <p className={styles.copyright}>COPYRIGHT © 2024 VITRA INTERNATIONAL AG. ALL RIGHTS RESERVED.</p>
+          <p className={styles.copyright}>COPYRIGHT © 2024 LUXELIVING INTERNATIONAL AG. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </div>
