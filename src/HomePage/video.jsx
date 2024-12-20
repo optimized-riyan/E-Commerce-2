@@ -1,83 +1,123 @@
-import React, { useState, useEffect, useRef } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import '@fontsource/dancing-script';
-// import '@fontsource/fira-sans';
-import '@fontsource/quicksand';
+import React, { useState } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "@fontsource/quicksand"; // Import Quicksand
+import { useNavigate } from "react-router-dom";
 
 export default function Video() {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 400);
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const isSmall = window.innerWidth <= 400;
-      setIsSmallScreen(isSmall);
-
-      // Stop video playback if on small screen
-      if (isSmall && videoRef.current) {
-        videoRef.current.pause();
-      } else if (videoRef.current) {
-        videoRef.current.play();
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Check on initial load
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+  const videoContainerStyle = {
+    position: "relative",
+    height: "480px",
+    width: "100vw",
+    marginTop: 0,
+    zIndex: 0,
+  };
 
   const videoStyle = {
-    width: '100%',
-    height: isSmallScreen ? '240px' : '480px',
-    objectFit: 'cover',
+    height: "100%",
+    width: "100%",
+    objectFit: "cover",
+    transition: "filter 2s ease", // Transition for the blur effect
+    filter: isHovered ? "blur(5px)" : "none", // Apply blur on hover
   };
 
   const containerStyle = {
-    position: isSmallScreen ? 'relative' : 'absolute',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: isSmallScreen ? 'rgba(0, 0, 0, 0.8)' : 'transparent', // Dark background for visibility
-    color: 'white',
-    padding: isSmallScreen ? '20px' : '0',
-    margin: isSmallScreen ? '10px 0' : '0',
-    bottom: isSmallScreen ? '0' : '240px',
-    width: '100%',
-    textAlign: 'center',
-    minHeight: isSmallScreen ? 'auto' : '0',
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    bottom: "240px",
+    left: "420px",
+    transition: "all 0.5s ease",
+    top: isHovered ? "100px" : "150px",
+    width: "500px",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
+  const textStyle = {
+    fontFamily: "Quicksand, sans-serif", // Use the imported font
+    color: "#FFF8E6",
+    zIndex: 2,
+  };
+
+  const h1Style = {
+    ...textStyle,
+    fontWeight: "bold",
+    transition: "transform 3s ease",
+    transform: isHovered ? "translateY(0px)" : "translateY(-20px)",
+  };
+
+  const pStyle = {
+    ...textStyle,
+    display: isHovered ? "block" : "none",
+    fontSize: "1.2em",
+    width: "auto",
+    transition: "opacity 0.5s ease, transform 0.5s ease",
+    transform: isHovered ? "translateY(0px)" : "translateY(20px)",
+  };
+
+  const BStyle = {
+    ...textStyle,
+    padding: "10px",
+    backgroundColor: "white",
+    color: "Black",
+    width: "180px",
+    outline: "none",
+    border: "none",
+    display: isHovered ? "block" : "none",
+    fontSize: "1em",
+    transition: "opacity 0.5s ease, transform 0.3s ease",
+    cursor: "pointer",
+    marginTop: "15px",
+    opacity: isHovered ? 1 : 0,
+    transform: isHovered ? "translateY(0px)" : "translateY(20px)",
+  };
+
+  const overlayStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    backgroundColor: "black",
+    opacity: isHovered ? 0.4 : 0, // Control opacity based on hover state
+    visibility: isHovered ? "visible" : "hidden",
+    transition: "opacity 0.5s ease, visibility 0.5s ease",
+    zIndex: 1,
+  };
+
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
+
+  const handleBuyNowClick = () => {
+    navigate("/products");
+  };
   return (
-    <div>
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={videoContainerStyle}
+    >
+      <div style={overlayStyle}></div>
       <video
-        ref={videoRef}
         style={videoStyle}
         src="src/assets/Home/2.mp4"
         autoPlay
         muted
         loop
+        onContextMenu={handleContextMenu} // Prevent context menu on right-click
       />
       <div style={containerStyle}>
-        <h1 style={{ fontFamily: 'Quicksand', fontWeight: 'bold' }}>
-          Home Stories for Winter
-        </h1>
-        <p style={{ fontFamily: 'Quicksand', fontSize: '1.2em', margin: '10px 0', width:'50%'}}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id facere iste deleniti odio earum eaque quis molestiae inventore ratione.
+        <h1 style={h1Style}>Home Stories for Winter</h1>
+        <p style={pStyle}>
+          Discover a curated collection of exquisite home decor that brings your
+          vision to life. We believe that every space tells a story. Our
+          handpicked selection of furniture, art, and accessories is designed to
+          reflect your unique style and elevate your home.
         </p>
-        <button
-          type="button"
-          style={{
-            padding: '10px',
-            fontFamily: 'Quicksand',
-            backgroundColor: 'white',
-            color: 'black',
-            border: 'none',
-            cursor: 'pointer',
-            marginTop: '10px',
-          }}
-        >
+        <button type="button" style={BStyle} onClick={handleBuyNowClick}>
           Buy Now
         </button>
       </div>

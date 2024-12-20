@@ -1,31 +1,31 @@
 .heading {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .carouselList::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .carouselList {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    width: 95vw;
-    overflow: auto;
-    scrollbar-width: none;
-    gap: .5rem;
-    margin: auto;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  width: 95vw;
+  overflow: auto;
+  scrollbar-width: none;
+  gap: 0.5rem;
+  margin: auto;
 }
 
 @media all and (min-width: 500px) {
-    .heading {
-        text-align: center;
-        line-height: 3rem;
-        font-size: xxx-large;
-    }
+  .heading {
+    text-align: center;
+    line-height: 3rem;
+    font-size: xxx-large;
+  }
 
-    .carouselList {
-        gap: 1rem;
-        width: 90vw;
-    }
+  .carouselList {
+    gap: 1rem;
+    width: 90vw;
+  }
 }

@@ -13,15 +13,12 @@ import CartDetails from '../Cart/Cart';
 import CheckOut from '../Checkout/Checkout';
 export default function Home() {
     return (
-      <>
-        <Navbar />
+        <>
             <Video />
             <Catalogue />
             <Parallaxx />
             <AboutVitra />
             <Carousal margin='1rem 0 6rem 0' />
-            <Footer />
-        <CheckOut />
-                </>
+        </>
     );
 }

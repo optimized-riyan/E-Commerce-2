@@ -1,68 +1,79 @@
-.body_img_cont{
-    width:700px;
-    height:450px;
+.body_img_cont {
+  width: 700px;
+  height: 450px;
 }
 
-.body_img{
-    width:700px;
-    height:450px;
+.body_img {
+  width: 700px;
+  height: 450px;
 }
 
-.prod_body{
-    display:flex;
-    margin-bottom: 30px;
+.prod_body {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.pp_info{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(252,188,64);
-    justify-content: center;
-    padding: 20px;
-    font-family: quicksand;
+.pp_info {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 188, 64);
+  justify-content: center;
+  padding: 20px;
+  font-family: quicksand;
 }
 
-.pp_desc{
-    margin-top: 0;
-    font-size: 20px;
+.pp_desc {
+  margin-top: 0;
+  font-size: 20px;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.card{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    border-radius:8px;
-    /* border:1px solid grey; */
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+.card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+  /* border:1px solid grey; */
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card_info{
-    margin: 10px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.card_info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card_info > h4{
-    margin: 2px;
-    text-wrap: wrap;
-    text-align: center;
-    font-family: quicksand;
+.card_info > h4 {
+  margin: 2px;
+  text-wrap: wrap;
+  text-align: center;
+  font-family: quicksand;
 }
 
-.card_img{
-    width:180px;
-    height:180px;
-/*   border:1px solid black; */
-    border-radius:15px;
-    margin:15px;
-    /* box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3); */
+.card_img {
+  width: 180px;
+  height: 180px;
+  /*   border:1px solid black; */
+  border-radius: 15px;
+  margin: 15px;
+  /* box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3); */
+}
+.card_img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.linkCard {
+  text-decoration: none;
+  color: black;
+}
+.productHeading {
+  margin-left: 10px;
 }

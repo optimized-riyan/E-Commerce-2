@@ -1,0 +1,119 @@
+.productDetailContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.imageContainer {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 20px;
+}
+.productImage {
+  height: 550px;
+  width: 500px;
+}
+.contentContainer {
+  width: 50%;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  margin: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  font-size: 2.7rem;
+  /* align-items: start; */
+  position: relative;
+  /* top: -40px; */
+}
+.desc {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  text-align: justify;
+  text-wrap: wrap;
+}
+
+.price {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.cartButton {
+  margin-left: 10px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 70px;
+  width: 220px;
+  position: relative;
+  background: transparent;
+  border: 1px solid;
+}
+
+.cartImage {
+  margin-left: 10px;
+}
+.cartButton:hover {
+  font-size: 1.1rem;
+  background-color: #fabc3f;
+  /* color: white; */
+}
+.cartButton::before {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+}
+.cartButton:hover::before {
+  height: 70px;
+  width: 220px;
+  border: 2px solid;
+  border-right: none;
+  border-bottom: none;
+  transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+
+.cartButton::after {
+  height: 0;
+  width: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  right: 0;
+}
+.cartButton:hover::after {
+  height: 70px;
+  width: 220px;
+  border: 2px solid black;
+  border-left: none;
+  border-top: none;
+  transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+
+@media (max-width: 900px) {
+  .productDetailContainer {
+    display: block;
+    padding: 5px;
+    margin: 0;
+    overflow: auto;
+  }
+  .contentContainer > .desc {
+    font-size: 1rem;
+  }
+}
