@@ -33,7 +33,6 @@ const CartDetails = () => {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Cart Details</h1>
-
       {cart && (
         <>
         <div style={{ marginTop: '20px'}}>
@@ -90,8 +89,6 @@ const CartDetails = () => {
         </div>
         </>
       )}
-
-      
     </div>
   );
 };

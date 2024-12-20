@@ -41,9 +41,6 @@ const CheckOut = () => {
               </div>
             </label>
           </div>
-       
-
-   
           <div style={{ display: "flex", flexDirection: "row", margin:'20px', borderBottomStyle:'solid', padding:'15px', borderColor:'gray', borderWidth:'1px'}}>
             <label htmlFor="option1">
               <div className={styles.text}>Credit Card: </div>
@@ -53,8 +50,6 @@ const CheckOut = () => {
               </div>
             </label>
           </div>
-   
-  
       <div
         style={{ display: "flex", width: "100%", padding: "15px", alignItems: "center", justifyContent: "center",}}>
         <FancyButton text={"Checkout"} />
