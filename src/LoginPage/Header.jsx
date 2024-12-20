@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 export default function Header() {
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>vitra.</h1>
+            <img src="src/NavBar/logo.png" alt="" height="50px" />
             <div className={styles.contRight}>
                 <LanguageDropdown />
                 <svg className={styles.phone} width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
