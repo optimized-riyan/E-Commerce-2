@@ -114,7 +114,7 @@ export default function Video() {
         onContextMenu={handleContextMenu} // Prevent context menu on right-click
       />
       <div style={containerStyle}>
-        <h1 style={h1Style}>Home Stories for Winter</h1>
+        <h1 style={h1Style}>LuxeLiving</h1>
         <p style={pStyle}>
           Discover a curated collection of exquisite home decor that brings your
           vision to life. We believe that every space tells a story. Our
