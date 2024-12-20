@@ -36,10 +36,10 @@ const CartDetails = () => {
 
       {cart && (
         <>
-        <div className="cart-details" style={{ marginTop: '20px' }}>
+        <div className="cart-details" style={{ marginTop: '20px'}}>
           {cart.products.map((product) => (
-            <div className={styles.product} key={product.id} >
-             <img src={product.thumbnail} alt={product.title} style={{width:'10%'}}/>
+            <div key={product.id} style={{display:'flex', flexDirection:'row', margin:'20px', alignItems:'center', borderStyle:'ridge', padding:'20px'}} >
+             <img src={product.thumbnail} alt={product.title} style={{width:'15%'}}/>
              <div style={{ width: "30%", textAlign: "center" }}>
                 <h3>{product.title}</h3>
               </div>
@@ -74,18 +74,24 @@ const CartDetails = () => {
             </div>
           ))}
         </div>
-        <div style={{marginTop: "20px",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid",}}>
-            <h2 style={styles.h2}>Cart ID: {cart.id}</h2>
-                <p>Total Products: {cart.totalProducts}</p>
-                <p>Total Quantity: {cart.totalQuantity}</p>
-                <p>Total Price: {cart.total}</p>
-                <p>Discounted Total: {cart.discountedTotal}</p>
+        <div style={{marginTop: "20px",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid", alignItems:'center', width:'50%', }}>
+            <h2>Cart ID: {cart.id}</h2>
+            <div className={styles.summary}>
+                <div className={styles.text}><p>Total Products: </p> {cart.totalProducts} </div>
+                <div className={styles.text}><p>Total Quantity: </p> {cart.totalQuantity}</div>
+                <div className={styles.text}><p>Total Price: </p>  {cart.total}</div>
+                <div className={styles.text}> <p>Discounted Total: </p>  {cart.discountedTotal}</div>
+            </div>
+                
+                
+               
+                <CheckOut/>
                 
         </div>
         </>
       )}
 
-       <CheckOut/>
+      
     </div>
   );
 };

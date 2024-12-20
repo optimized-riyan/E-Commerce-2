@@ -16,56 +16,47 @@ const CheckOut = () => {
   return (
 
          <div className={styles.div1}>
-          Select Payment Method:
-          <div style={{ display: "flex",flexDirection: "row"}}>
-            <input type="radio" id="option1" value="option1" checked={selectedValue === "option1"} onChange={() => handleRadioChange("option1")}
-            />
+          Select Payment Method: 
+          <div style={{ display: "flex", flexDirection: "row", margin:'20px', borderBottomStyle:'solid', padding:'15px', borderColor:'gray', borderWidth:'1px'}}>
             <label htmlFor="option1">
-              <div className={styles.options}>
-                <div className={styles.text}>UPI: </div>
-                <div>
-                <FaGooglePay className={styles.icon} />
+              <div className={styles.text}>UPI: </div>
+              <div  className={styles.options}>
+              <input type="radio" id="option1" value="option1" checked={selectedValue === "option1"} onChange={() => handleRadioChange("option1")}/>
+              <FaGooglePay className={styles.icon} />
                 <SiPhonepe className={styles.icon} />
                 <SiPaytm className={styles.icon} />
-                </div>
               </div>
             </label>
           </div>
-     
 
-        <div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <input type="radio" id="option2" value="option2" checked={selectedValue === "option2"} onChange={() => handleRadioChange("option2")}/>
+
+     
+          <div style={{ display: "flex", flexDirection: "row", margin:'20px', borderBottomStyle:'solid', padding:'15px', borderColor:'gray', borderWidth:'1px'}}>
+            
             <label htmlFor="option1">
-              <div  className={styles.options}>
               <div className={styles.text}>Paypal: </div>
+              <div  className={styles.options}>
+              <input type="radio" id="option2" value="option2" checked={selectedValue === "option2"} onChange={() => handleRadioChange("option2")}/>
                 <FaPaypal className={styles.icon} />
               </div>
             </label>
           </div>
-        </div>
+       
 
-        <div>
-          <div style={{ display: "flex", flexDirection: "row",}}>
-            <input type="radio" id="option3" value="option3" checked={selectedValue === "option3"} onChange={() => handleRadioChange("option3")}/>
+   
+          <div style={{ display: "flex", flexDirection: "row", margin:'20px', borderBottomStyle:'solid', padding:'15px', borderColor:'gray', borderWidth:'1px'}}>
             <label htmlFor="option1">
-              <div className={styles.options}>
               <div className={styles.text}>Credit Card: </div>
+              <div className={styles.options}>
+              <input type="radio" id="option3" value="option3" checked={selectedValue === "option3"} onChange={() => handleRadioChange("option3")}/>
                 <CiCreditCard1 className={styles.icon} />
               </div>
             </label>
           </div>
-        </div>
+   
   
       <div
-        style={{
-          display: "flex",
-          width: "100%",
-          padding: "15px",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+        style={{ display: "flex", width: "100%", padding: "15px", alignItems: "center", justifyContent: "center",}}>
         <FancyButton text={"Checkout"} />
       </div>
       </div>
