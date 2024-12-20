@@ -20,3 +20,26 @@ text{
     border-style: solid;
 
 }
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%
+}
+
+.icon{
+    margin: 10px;
+}
+
+.product{
+    display: "flex";
+    flex-direction: "row";
+    flex-wrap: "wrap";
+    border: "1px solid #ddd";
+    padding: "10px";
+    margin-bottom: "10px";
+    align-items: "center";
+    align-content: "center";
+}
