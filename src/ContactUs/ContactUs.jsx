@@ -1,10 +1,10 @@
-import ContactCarousel from './ContactCarousel';
+import ContactCover from './ContactCover';
 import ContactForm from './ContactForm';
 
 export default function ContactUs() {
     return (
         <>
-            <ContactCarousel />
+            <ContactCover />
             <ContactForm />
         </>
     );

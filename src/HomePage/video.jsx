@@ -9,9 +9,10 @@ export default function Video() {
   const videoContainerStyle = {
     position: "relative",
     height: "480px",
-    width: "100vw",
+    // width: "100%",
     marginTop: 0,
     zIndex: 0,
+    boxSizing: "border-box",
   };
 
   const videoStyle = {
@@ -27,7 +28,7 @@ export default function Video() {
     display: "flex",
     flexDirection: "column",
     bottom: "240px",
-    left: "420px",
+    left: "400px",
     transition: "all 0.5s ease",
     top: isHovered ? "100px" : "150px",
     width: "500px",

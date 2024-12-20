@@ -1,0 +1,19 @@
+.options{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+.text{
+    margin-right: 50px;
+}
+
+.icon{
+    margin: 10px;
+}
+
+.div1{
+    padding: 20px;
+    margin: 20px;
+}
