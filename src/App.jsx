@@ -9,6 +9,7 @@ import Profile from "./ProfilePage/Profile";
 import ContactUs from "./ContactUs/ContactUs";
 import AboutUs from './About/AboutUs';
 import SuperLayout from "./SuperLayout";
+import Image from "./About/Image";
 
 function App() {
     return (
