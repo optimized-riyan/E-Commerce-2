@@ -74,7 +74,7 @@ const CartDetails = () => {
             </div>
           ))}
         </div>
-        <div style={{marginTop: "20px",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid", alignItems:'center', width:'50%', }}>
+        <div style={{margin: "20px auto 0 auto",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "2px",borderStyle: "solid", alignItems:'center', width:'50%', }}>
             <h2>Cart ID: {cart.id}</h2>
             <div className={styles.summary}>
                 <div className={styles.text}><p>Total Products: </p> {cart.totalProducts} </div>
