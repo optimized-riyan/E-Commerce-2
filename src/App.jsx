@@ -5,25 +5,31 @@ import ProductPage from "./ProductPage/ProductPage";
 import ProductDetail from "./ProductDetail/ProductDetail";
 import UserData from "./HomePage/userdata";
 import CartDetails from "./Cart/Cart";
-import AboutUs from "./About/AboutUs";
+import Profile from "./ProfilePage/Profile";
+import ContactUs from "./ContactUs/ContactUs";
+import AboutUs from './About/AboutUs';
+import SuperLayout from "./SuperLayout";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/userdata" element={<UserData />} />
-        <Route path="/cart" element={<CartDetails />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/products" element={<ProductPage />} />
-        <Route path="/products">
-          <Route index element={<ProductPage />} />
-          <Route path="detail/:id" element={<ProductDetail />} />
-        </Route>
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route element={<SuperLayout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/userdata" element={<UserData />} />
+                    <Route path="/cart" element={<CartDetails />}/>
+                    <Route path="/profile" element={<Profile />}/>
+                    <Route path="/contactus" element={<ContactUs />} />
+                    <Route path="/about" element={<AboutUs />}/>
+                    <Route path="/products">
+                        <Route index element={<ProductPage />} />
+                        <Route path="detail/:id" element={<ProductDetail />} />
+                    </Route>
+                </Route>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
