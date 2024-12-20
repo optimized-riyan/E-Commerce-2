@@ -1,5 +1,9 @@
 .container {
-    margin: 0 2rem;
+    margin: 0 2rem 10rem 2rem;
+}
+
+.helloMsg {
+    text-transform: uppercase;
 }
 
 .fieldTable {

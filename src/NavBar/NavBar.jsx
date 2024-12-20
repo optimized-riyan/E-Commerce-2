@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "./NavDesign.module.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -14,39 +15,39 @@ export default function NavBar() {
 
             <ul className={styles.navLink}>
               <li className={styles.lists}>
-                <a className={styles.alist} href="#">
+                <Link className={styles.alist} to={'/'}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className={styles.lists}>
-                <a className={styles.alist} href="#">
-                  About
-                </a>
-              </li>
-              <li className={styles.lists}>
-                <a className={styles.alist} href="#">
-                  Contact
-                </a>
-              </li>
-              <li className={styles.lists}>
-                <a className={styles.alist} href="#">
+                <Link className={styles.alist} to={'/products'}>
                   Products
-                </a>
+                </Link>
               </li>
               <li className={styles.lists}>
-                <a className={styles.alist} href="#">
-                  Magazines
-                </a>
+                <Link className={styles.alist} to={'/profile'}>
+                  Profile
+                </Link>
               </li>
               <li className={styles.lists}>
-                <a className={styles.alist} href="#">
-                  Services
-                </a>
+                <Link className={styles.alist} to={'/cart'}>
+                  Cart
+                </Link>
               </li>
               <li className={styles.lists}>
-                <a className={styles.alist} href="#">
-                  Professionals
-                </a>
+                <Link className={styles.alist} to={'/about'}>
+                  About
+                </Link>
+              </li>
+              <li className={styles.lists}>
+                <Link className={styles.alist} to={'/contactus'}>
+                  Contact
+                </Link>
+              </li>
+              <li className={styles.lists}>
+                <Link className={styles.alist} to={'/login'}>
+                  Login
+                </Link>
               </li>
             </ul>
             <div className={styles.icon}>

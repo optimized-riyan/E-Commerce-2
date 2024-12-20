@@ -16,7 +16,7 @@ export default function Profile() {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.helloMsg}>HELLO RIYAN</h1>
+            <h1 className={styles.helloMsg}>HELLO {firstName}</h1>
             <table className={styles.fieldTable}>
                 <tbody>
                     <tr>
