@@ -18,6 +18,8 @@ export default function Video() {
   const videoStyle = {
     height: "100%",
     width: "100%",
+    display: "flex",
+    flexWrap: "wrap",
     objectFit: "cover",
     transition: "filter 2s ease", // Transition for the blur effect
     filter: isHovered ? "blur(5px)" : "none", // Apply blur on hover
@@ -27,13 +29,14 @@ export default function Video() {
     position: "absolute",
     display: "flex",
     flexDirection: "column",
-    bottom: "240px",
-    left: "400px",
+    left: "50%",
+    transform: "translate(-50%, -20%)",
     transition: "all 0.5s ease",
     top: isHovered ? "100px" : "150px",
     width: "500px",
     alignItems: "center",
     justifyContent: "center",
+    zIndex:2
   };
 
   const textStyle = {
