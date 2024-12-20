@@ -1,19 +1,32 @@
 .options{
     display: flex;
     flex-direction: row;
-    padding: 20px;
     align-items: center;
+    align-content: center;
+    /* justify-content: space-between; */
+    /* border-style: solid; */
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .text{
-    margin-right: 50px;
+    margin-left: 20px
 }
 
 .icon{
-    margin: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 25px;
 }
 
 .div1{
     padding: 20px;
     margin: 20px;
+    width: 100%;
+}
+
+.heading{
+     display: "flex"; 
+     flex-direction: "row"; width:'100%'; border-style:'solid'; justify-content:'center'
 }
