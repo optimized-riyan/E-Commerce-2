@@ -9,9 +9,10 @@ export default function Video() {
   const videoContainerStyle = {
     position: "relative",
     height: "480px",
-    width: "100vw",
+    // width: "100%",
     marginTop: 0,
     zIndex: 0,
+    boxSizing: "border-box",
   };
 
   const videoStyle = {
