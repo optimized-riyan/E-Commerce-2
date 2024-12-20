@@ -11,7 +11,6 @@ export default function Form() {
   const [userData, setUserData]=useState([])
    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
     const navigate = useNavigate();
     const {setUser} = useContext(UserContext);
 
@@ -19,7 +18,6 @@ export default function Form() {
     try{
       const response = await axios.get('https://dummyjson.com/users');
       setUserData(response.data.users);
-      // console.log("Fetched Users", response.data.users.json())
     }
 
     catch (error){
@@ -42,6 +40,7 @@ useEffect(()=>{
     );
     if (user) {
       console.log('Success');
+      localStorage.setItem('user', JSON.stringify(user));
       navigate("/profile");
       setUser(user);
     } else {

@@ -10,10 +10,15 @@ import ContactUs from "./ContactUs/ContactUs";
 import AboutUs from './About/AboutUs';
 import SuperLayout from "./SuperLayout";
 import UserContext from "./UserContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
     const [user, setUser] = useState({});
+
+    useEffect(() => {
+        const user = localStorage.getItem('user');
+        setUser(curr => user !== null ? JSON.parse(user) : {});
+    }, []);
 
     return (
         <UserContext.Provider value={{ user, setUser }}>

@@ -33,27 +33,9 @@ const CartDetails = () => {
     }
   };
 
-  const handleQuantityChange = (productId, newQuantity) => {
-    setCart(prevCart => {
-      return {
-        ...prevCart,
-        products: prevCart.products.map(product =>
-          product.id === productId ? { ...product, quantity: newQuantity } : product
-        )
-      };
-    });
-  };
-
   return (
     <div style={{ padding: '20px' }}>
       <h1>Cart Details</h1>
-      {/* <input
-        type="number"
-        value={cartId}
-        onChange={(e) => setCartId(e.target.value)}
-        placeholder="Enter Cart ID"
-      />
-      <button onClick={getCartDetails}>Get Cart Details</button> */}
 
       {cart && (
         <div className="cart-details" style={{ marginTop: '20px' }}>
@@ -75,12 +57,6 @@ const CartDetails = () => {
               <div className="jj"  style={{flex:1,   textAlign: 'center',  }}><p>Price: ${product.price}</p></div>
               <div className="jj" style={{ flex:1, textAlign: 'center',}}>
                 <p>Quantity:<br /><br />
-                  {/* <input
-                    type="number"
-                    value={product.quantity}
-                    onChange={(e) => handleQuantityChange(product.id, e.target.value)}
-                    style={{ padding: '5px', width: '40%', justifyContent: 'space-between', borderRadius: '5px', borderStyle: 'solid', borderColor: 'gray', textAlign: 'center' }}
-                  /> */}
                   {product.quantity}
                 </p>
               </div>
