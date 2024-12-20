@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaBars } from "react-icons/fa";
 import styles from "./NavDesign.module.css";
 import { Link } from "react-router-dom";
+import UserContext from '../UserContext';
 
 export default function NavBar() {
+    const {user} = useContext(UserContext);
+
   return (
     <>
       <header>
@@ -44,11 +47,13 @@ export default function NavBar() {
                   Contact
                 </Link>
               </li>
-              <li className={styles.lists}>
-                <Link className={styles.alist} to={'/login'}>
-                  Login
-                </Link>
-              </li>
+              {!(user.firstName) && (
+                <li className={styles.lists}>
+                    <Link className={styles.alist} to={'/login'}>
+                    Login
+                    </Link>
+                </li>
+              )}
             </ul>
             <div className={styles.icon}>
               <FaBars />
