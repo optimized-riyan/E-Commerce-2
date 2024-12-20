@@ -1,0 +1,14 @@
+/* .videocontainer {
+  position: relative;
+}
+@media (max-width: 600px) {
+  .container > h1 {
+    display: none;
+  }
+  .container .desc {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+} */

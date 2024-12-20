@@ -27,7 +27,7 @@ export default function Video() {
     display: "flex",
     flexDirection: "column",
     bottom: "240px",
-    left: "420px",
+    left: "400px",
     transition: "all 0.5s ease",
     top: isHovered ? "100px" : "150px",
     width: "500px",
