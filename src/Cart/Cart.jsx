@@ -36,7 +36,7 @@ const CartDetails = () => {
 
       {cart && (
         <>
-        <div className="cart-details" style={{ marginTop: '20px'}}>
+        <div style={{ marginTop: '20px'}}>
           {cart.products.map((product) => (
             <div key={product.id} style={{display:'flex', flexDirection:'row', margin:'20px', alignItems:'center', borderStyle:'ridge', padding:'20px'}} >
              <img src={product.thumbnail} alt={product.title} style={{width:'15%'}}/>

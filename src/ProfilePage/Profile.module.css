@@ -32,6 +32,10 @@
     font-weight: lighter;
 }
 
+.fieldValue, .fieldTitle {
+    margin: 20px;
+}
+
 .editBtnContainer {
     height: 40%;
     position: absolute;
