@@ -7,40 +7,40 @@ import UserData from "./HomePage/userdata";
 import CartDetails from "./Cart/Cart";
 import Profile from "./ProfilePage/Profile";
 import ContactUs from "./ContactUs/ContactUs";
-import AboutUs from './About/AboutUs';
+import AboutUs from "./About/AboutUs";
 import SuperLayout from "./SuperLayout";
 import UserContext from "./UserContext";
 import { useEffect, useState } from "react";
 
 function App() {
-    const [user, setUser] = useState({});
+  const [user, setUser] = useState({});
 
-    useEffect(() => {
-        const user = localStorage.getItem('user');
-        setUser(curr => user !== null ? JSON.parse(user) : {});
-    }, []);
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    setUser((curr) => (user !== null ? JSON.parse(user) : {}));
+  }, []);
 
-    return (
-        <UserContext.Provider value={{ user, setUser }}>
-            <Router>
-                <Routes>
-                    <Route path="/login" element={<Login setUser={setUser} />} />
-                    <Route element={<SuperLayout />}>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/userdata" element={<UserData />} />
-                        <Route path="/cart" element={<CartDetails />}/>
-                        <Route path="/profile" element={<Profile />}/>
-                        <Route path="/contactus" element={<ContactUs />} />
-                        <Route path="/about" element={<AboutUs />}/>
-                        <Route path="/products">
-                            <Route index element={<ProductPage />} />
-                            <Route path="detail/:id" element={<ProductDetail />} />
-                        </Route>
-                    </Route>
-                </Routes>
-            </Router>
-        </UserContext.Provider>
-    );
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route element={<SuperLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/userdata" element={<UserData />} />
+            <Route path="/cart" element={<CartDetails />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/products">
+              <Route index element={<ProductPage />} />
+              <Route path="detail/:id" element={<ProductDetail />} />
+            </Route>
+          </Route>
+        </Routes>
+      </Router>
+    </UserContext.Provider>
+  );
 }
 
 export default App;
