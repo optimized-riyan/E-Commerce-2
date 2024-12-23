@@ -23,8 +23,10 @@ const CheckOut = () => {
               <div  className={styles.options}>
               <input type="radio" id="option1" value="option1" checked={selectedValue === "option1"} onChange={() => handleRadioChange("option1")}/>
               <FaGooglePay className={styles.icon} />
-                <SiPhonepe className={styles.icon} />
-                <SiPaytm className={styles.icon} />
+              <input type="radio" id="option4" value="option4" checked={selectedValue === "option4"} onChange={() => handleRadioChange("option4")}/>
+              <SiPhonepe className={styles.icon} />
+              <input type="radio" id="option2" value="option5" checked={selectedValue === "option5"} onChange={() => handleRadioChange("option5")}/>
+              <SiPaytm className={styles.icon} />
               </div>
             </label>
           </div>
