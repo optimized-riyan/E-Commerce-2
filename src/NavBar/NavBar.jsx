@@ -15,7 +15,7 @@ export default function NavBar() {
         <div className={styles.box}>
           <nav className={styles.navs}>
             <div className={styles.logo}>
-              <img src="src/NavBar/logo.png" alt="" height="50px" />
+              {/* <img src="src/NavBar/logo.png" alt="" height="50px" /> */}
               <button
                 style={{
                   backgroundColor: "transparent",
