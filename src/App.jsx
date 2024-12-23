@@ -11,6 +11,7 @@ import AboutUs from "./About/AboutUs";
 import SuperLayout from "./SuperLayout";
 import UserContext from "./UserContext";
 import { useEffect, useState } from "react";
+import SignUp from './LoginPage/SignUp';
 
 function App() {
   const [user, setUser] = useState({});
@@ -25,6 +26,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/signup" element={<SignUp setUser={setUser} />} />
           <Route element={<SuperLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/userdata" element={<UserData />} />
