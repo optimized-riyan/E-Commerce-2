@@ -12,7 +12,11 @@ const Card = (props) => {
       >
         <div className={myStyle.card}>
           <div className={myStyle.card_img_container}>
-            <img className={myStyle.card_img} src={props.img} alt={props.alt} />
+            <img
+              className={myStyle.card_img}
+              src={props.thumbnail}
+              alt={props.alt}
+            />
           </div>
           <div className={myStyle.card_info}>
             <h4>{props.title}</h4>

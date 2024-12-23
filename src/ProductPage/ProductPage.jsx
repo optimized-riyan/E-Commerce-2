@@ -8,7 +8,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     // Fetch data from the JSON server
-    fetch("http://localhost:3000/yehaidata")
+    fetch("http://localhost:4000/yehaidata")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
@@ -30,10 +30,9 @@ const ProductPage = () => {
           return (
             <Card
               id={item.id}
-              img={item.img}
+              thumbnail={item.thumbnail}
               alt={item.alt}
               title={item.title}
-              subtitle={item.subtitle}
               description={item.description}
               price={item.price}
               key={item.id}

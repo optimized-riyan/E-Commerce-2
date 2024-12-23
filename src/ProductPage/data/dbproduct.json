@@ -2,7 +2,7 @@
   "yehaidata": [
     {
       "id": 1,
-      "img": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
+      "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png",
       "alt": "Placeholder Image -1",
       "title": "Annibale Colombo Sofa",
       "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "img": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
+      "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png",
       "alt": "Placeholder Image-2",
       "title": "Bedside Table African Cherry",
       "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
@@ -26,7 +26,7 @@
     },
     {
       "id": 3,
-      "img": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png",
+      "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png",
       "alt": "Placeholder Image-3",
       "title": "Knoll Saarinen Executive Conference Chair",
       "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
@@ -38,7 +38,7 @@
     },
     {
       "id": 4,
-      "img": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
+      "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png",
       "alt": "Placeholder Image-4",
       "title": "Wooden Bathroom Sink With Mirror",
       "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
@@ -50,7 +50,7 @@
     },
     {
       "id": 5,
-      "img": "https://ik.imagekit.io/2xkwa8s1i/img/sofa-sets/skiver/6seater/WSFASKRL3CLRTN/1.jpg?tr",
+      "thumbnail": "https://ik.imagekit.io/2xkwa8s1i/img/sofa-sets/skiver/6seater/WSFASKRL3CLRTN/1.jpg?tr",
       "alt": "Placeholder Image-5",
       "title": "Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise)",
       "description": "The Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise) combines modern elegance with spacious comfort, featuring high-quality fabric upholstery, sturdy construction, and a versatile chaise for ultimate relaxation. ",
@@ -62,7 +62,7 @@
     },
     {
       "id": 6,
-      "img": "https://static.vitra.com/media-resized/2-5oWcZ7Ud47gO3toeF_aIym609FZzoHKjVr1hgQfH0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODI3Nzgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI3NzQwMy5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/2-5oWcZ7Ud47gO3toeF_aIym609FZzoHKjVr1hgQfH0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODI3Nzgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI3NzQwMy5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Eames Desk Unit EDU",
       "description": "The Eames Desk Unit (EDU) was constructed by Charles and Ray Eames in accordance with the principles of industrial production. The panels function as a modesty shield and partially enclose the two storage compartments.",
@@ -74,7 +74,7 @@
     },
     {
       "id": 7,
-      "img": "https://static.vitra.com/media-resized/wqCBhc94669XaiuWhKB3sONlcyXYjLJnK5B0Lb4kvhs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzM0MDk5NTYvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80NzQ3MDU3MC5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/wqCBhc94669XaiuWhKB3sONlcyXYjLJnK5B0Lb4kvhs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzM0MDk5NTYvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80NzQ3MDU3MC5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Kado Office ",
       "description": "Kado Office is a minimalist interior planning system consisting of freestanding structures. The clean lines of the frame give it an architectural look and playful three-dimensionality. Kado Office is accespricesible from both sides, so that in addition to providing storage space.",
@@ -86,7 +86,7 @@
     },
     {
       "id": 8,
-      "img": "https://static.vitra.com/media-resized/rZaBTdjP0v_QDsiRoCxaTjzPpDoD1jQdXYePzuV1uRE/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzUzNTAxNDIvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC81ODkxMTUwMy5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/rZaBTdjP0v_QDsiRoCxaTjzPpDoD1jQdXYePzuV1uRE/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzUzNTAxNDIvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC81ODkxMTUwMy5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Alcove Plus Desk ",
       "subtitle": " Storage Solution with Ample Space and Functionality",
@@ -99,7 +99,7 @@
     },
     {
       "id": 9,
-      "img": "https://static.vitra.com/media-resized/ybhyb1BxGPbG2QB_RPImN2I0inAVkxAycmP1HRQX6-A/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNzg0MTkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zMzIyMzU4MC5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/ybhyb1BxGPbG2QB_RPImN2I0inAVkxAycmP1HRQX6-A/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNzg0MTkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zMzIyMzU4MC5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Grand Repos",
       "description": "A synchronised mechanism is concealed beneath the upholstery of the Grand Repos wing chair and can be locked in any position, for optimum back support and utmost comfort.",
@@ -111,7 +111,7 @@
     },
     {
       "id": 10,
-      "img": "https://static.vitra.com/media-resized/SBz8-3I8RhatFNXa3LHIYK_3Mtx0iFfP4XfkUd8LUW4/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNjQ3ODAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjExNzc2NS5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/SBz8-3I8RhatFNXa3LHIYK_3Mtx0iFfP4XfkUd8LUW4/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNjQ3ODAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjExNzc2NS5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Coffee Table",
       "description": "In creating his design for the Coffee Table, Isamu Noguchi translated the biomorphic aesthetic of his sculptural works into a piece of furniture with distinctive organic forms.",
@@ -123,7 +123,7 @@
     },
     {
       "id": 11,
-      "img": "https://static.vitra.com/media/asset/5350129/storage/v_fullbleed_1440x/58911470.jpg",
+      "thumbnail": "https://static.vitra.com/media/asset/5350129/storage/v_fullbleed_1440x/58911470.jpg",
       "alt": "Placeholder Image",
       "title": "Alcove Plus Desk",
       "description": "Alcove Plus Desk is a touchdown workstation that shields users both visually and acoustically, making it ideally suited for focussed tasks.",
@@ -135,7 +135,7 @@
     },
     {
       "id": 12,
-      "img": "https://static.vitra.com/media-resized/F05oasobLb3aUNq7q7K9MQ7iuS3YzPKnwnJgjDiGv8c/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODA1ODgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI2MzMzNS5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/F05oasobLb3aUNq7q7K9MQ7iuS3YzPKnwnJgjDiGv8c/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODA1ODgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI2MzMzNS5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Eames Tandem Seating ETS",
       "description": "Designed by Charles and Ray Eames for use in waiting areas, the robust Tandem Seating system has proven its quality over a period of decades, providing a comfortable place to sit in airports, train stations and other public spaces.",
@@ -147,7 +147,7 @@
     },
     {
       "id": 13,
-      "img": "https://static.vitra.com/media-resized/waxcWz1PBUmU8K-UCtqkpqiVrYOdGONCd_2k9kFadDQ/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODUyODEvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xOTcxMjA4NC5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/waxcWz1PBUmU8K-UCtqkpqiVrYOdGONCd_2k9kFadDQ/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODUyODEvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xOTcxMjA4NC5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Dining Table",
       "description": "The Dining Table by Isamu Noguchi is one of the most elegant dining tables in the history of twentieth-century furniture design. ",
@@ -159,7 +159,7 @@
     },
     {
       "id": 14,
-      "img": "https://static.vitra.com/media-resized/bWp_BIYHYbT_Og4yrpZzQ8ZP9MUr-ZssipbkqLGNAQs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzkyNTc4MTAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84MzIxNzAyNS5qcGc.jpg  ",
+      "thumbnail": "https://static.vitra.com/media-resized/bWp_BIYHYbT_Og4yrpZzQ8ZP9MUr-ZssipbkqLGNAQs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzkyNTc4MTAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84MzIxNzAyNS5qcGc.jpg  ",
       "alt": "Placeholder Image",
       "title": "Cushions",
       "description": "Cushions come in a collection of various sizes. They can be used either as back cushions or for purely decorative purposes and provide soft pleasant comfort.",
@@ -184,7 +184,7 @@
     },
     {
       "id": 16,
-      "img": "https://static.vitra.com/media-resized/3IyAj9cEmXDIEKuRGpS58Hogj6GP-1b235JY2QndkI0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzI5MDk2NDcvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80MDkzMDE5Ny5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/3IyAj9cEmXDIEKuRGpS58Hogj6GP-1b235JY2QndkI0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzI5MDk2NDcvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80MDkzMDE5Ny5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Resting Bear ",
       "description": "Resting Animals whose poses exude a serene tranquillity. The largest is a knit-covered bear that can be used for a variety of functions, such as a stool, ottoman or backrest.",
