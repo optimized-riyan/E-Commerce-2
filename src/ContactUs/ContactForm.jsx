@@ -54,11 +54,11 @@ const ContactForm = () => {
           onChange={handleChange} required
         >
           <option value="" disabled selected>Service Request</option>
-          <option value="">Spare parts</option>
-          <option value="">Repair</option>
-          <option value="">Restoration</option>
-          <option value="">Maintenance and care</option>
-          <option value="">General service request</option>
+          <option value="spare">Spare parts</option>
+          <option value="repair">Repair</option>
+          <option value="restoration">Restoration</option>
+          <option value="maintenance">Maintenance and care</option>
+          <option value="service">General service request</option>
           
         </select>
       </div>
@@ -172,13 +172,13 @@ const ContactForm = () => {
           onChange={handleChange} required
         >
           <option value="" disabled selected>Country</option>
-          <option value="">India</option>
-          <option value="">US</option>
-          <option value="">United Kingdom</option>
-          <option value="">Australia</option>
-          <option value="">SriLanka</option>
-          <option value="">China</option>
-          <option value="">Italy</option>
+          <option value="india">India</option>
+          <option value="us">US</option>
+          <option value="uk">United Kingdom</option>
+          <option value="australia">Australia</option>
+          <option value="srilanka">SriLanka</option>
+          <option value="china">China</option>
+          <option value="italy">Italy</option>
           
         </select>
       </div>
