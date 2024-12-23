@@ -6,7 +6,11 @@
       "alt": "Placeholder Image -1",
       "title": "Annibale Colombo Sofa",
       "description": "The Annibale Colombo Sofa is a sophisticated and comfortable seating option, featuring exquisite design and premium upholstery for your living room.",
-      "price": 7500.0
+      "price": 7500.0,
+      "quantity": 1,
+      "total": 7500.0,
+      "discountPercentage": 10,
+      "discountedTotal": 6750.00
     },
     {
       "id": 2,
@@ -14,7 +18,11 @@
       "alt": "Placeholder Image-2",
       "title": "Bedside Table African Cherry",
       "description": "The Bedside Table in African Cherry is a stylish and functional addition to your bedroom, providing convenient storage space and a touch of elegance.",
-      "price": 2000.0
+      "price": 2000.0,
+      "quantity": 1,
+      "total": 2000.0,
+      "discountPercentage": 8,
+      "discountedTotal": 1840
     },
     {
       "id": 3,
@@ -22,7 +30,11 @@
       "alt": "Placeholder Image-3",
       "title": "Knoll Saarinen Executive Conference Chair",
       "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
-      "price": 3600.0
+      "price": 3600.0,
+      "quantity": 1,
+      "total": 3600.0,
+      "discountPercentage": 8,
+      "discountedTotal": 3312
     },
     {
       "id": 4,
@@ -30,7 +42,11 @@
       "alt": "Placeholder Image-4",
       "title": "Wooden Bathroom Sink With Mirror",
       "description": "The Wooden Bathroom Sink with Mirror is a unique and stylish addition to your bathroom, featuring a wooden sink countertop and a matching mirror.",
-      "price": 2650.0
+      "price": 2650.0,
+      "quantity": 1,
+      "total": 2650,
+      "discountPercentage": 10,
+      "discountedTotal": 2385
     },
     {
       "id": 5,
@@ -38,7 +54,11 @@
       "alt": "Placeholder Image-5",
       "title": "Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise)",
       "description": "The Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise) combines modern elegance with spacious comfort, featuring high-quality fabric upholstery, sturdy construction, and a versatile chaise for ultimate relaxation. ",
-      "price": 13700.0
+      "price": 13700.0,
+      "quantity": 1,
+      "total": 13700.0,
+      "discountPercentage": 15,
+      "discountedTotal": 11645
     },
     {
       "id": 6,
@@ -46,15 +66,23 @@
       "alt": "Placeholder Image",
       "title": "Eames Desk Unit EDU",
       "description": "The Eames Desk Unit (EDU) was constructed by Charles and Ray Eames in accordance with the principles of industrial production. The panels function as a modesty shield and partially enclose the two storage compartments.",
-      "price": 8750.0
+      "price": 8750.0,
+      "quantity": 1,
+      "total": 8750.0,
+      "discountPercentage": 5,
+      "discountedTotal": 8312
     },
     {
       "id": 7,
       "img": "https://static.vitra.com/media-resized/wqCBhc94669XaiuWhKB3sONlcyXYjLJnK5B0Lb4kvhs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzM0MDk5NTYvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80NzQ3MDU3MC5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Kado Office ",
-      "description": "Kado Office is a minimalist interior planning system consisting of freestanding structures. The clean lines of the frame give it an architectural look and playful three-dimensionality. Kado Office is accessible from both sides, so that in addition to providing storage space.",
-      "price": 33800.0
+      "description": "Kado Office is a minimalist interior planning system consisting of freestanding structures. The clean lines of the frame give it an architectural look and playful three-dimensionality. Kado Office is accespricesible from both sides, so that in addition to providing storage space.",
+      "price": 33800.0,
+      "quantity": 1,
+      "total": 33800.0,
+      "discountPercentage": 20,
+      "discountedTotal": 27040
     },
     {
       "id": 8,
@@ -63,7 +91,11 @@
       "title": "Alcove Plus Desk ",
       "subtitle": " Storage Solution with Ample Space and Functionality",
       "description": "Alcove Plus Desk is a touchdown workstation that shields users both visually and acoustically, making it ideally suited for focussed tasks. Alcove Plus Desk comes in three sizes and can be fitted with portable partition screens, which are attached to the side panels with zip fasteners.",
-      "price": 3850.0
+      "price": 3850.0,
+      "quantity": 1,
+      "total": 3850.0,
+      "discountPercentage": 12,
+      "discountedTotal": 3388
     },
     {
       "id": 9,
@@ -71,7 +103,11 @@
       "alt": "Placeholder Image",
       "title": "Grand Repos",
       "description": "A synchronised mechanism is concealed beneath the upholstery of the Grand Repos wing chair and can be locked in any position, for optimum back support and utmost comfort.",
-      "price": 6900.0
+      "price": 6900.0,
+      "quantity": 1,
+      "total": 6900.0,
+      "discountPercentage": 10,
+      "discountedTotal": 6210
     },
     {
       "id": 10,
@@ -79,7 +115,11 @@
       "alt": "Placeholder Image",
       "title": "Coffee Table",
       "description": "In creating his design for the Coffee Table, Isamu Noguchi translated the biomorphic aesthetic of his sculptural works into a piece of furniture with distinctive organic forms.",
-      "price": 5950.0
+      "price": 5950.0,
+      "quantity": 1,
+      "total": 5950.0,
+      "discountPercentage": 5,
+      "discountedTotal": 5652.50
     },
     {
       "id": 11,
@@ -87,7 +127,11 @@
       "alt": "Placeholder Image",
       "title": "Alcove Plus Desk",
       "description": "Alcove Plus Desk is a touchdown workstation that shields users both visually and acoustically, making it ideally suited for focussed tasks.",
-      "price": 5000.0
+      "price": 5000.0,
+      "quantity": 1,
+      "total": 5000.0,
+      "discountPercentage": 12,
+      "discountedTotal": 4400
     },
     {
       "id": 12,
@@ -95,7 +139,11 @@
       "alt": "Placeholder Image",
       "title": "Eames Tandem Seating ETS",
       "description": "Designed by Charles and Ray Eames for use in waiting areas, the robust Tandem Seating system has proven its quality over a period of decades, providing a comfortable place to sit in airports, train stations and other public spaces.",
-      "price": 14050.0
+      "price": 14050.0,
+      "quantity": 1,
+      "total": 14050.0,
+      "discountPercentage": 11,
+      "discountedTotal": 12504.50
     },
     {
       "id": 13,
@@ -103,7 +151,11 @@
       "alt": "Placeholder Image",
       "title": "Dining Table",
       "description": "The Dining Table by Isamu Noguchi is one of the most elegant dining tables in the history of twentieth-century furniture design. ",
-      "price": 3100.0
+      "price": 3100.0,
+      "quantity": 1,
+      "total": 3100.0,
+      "discountPercentage": 0,
+      "discountedTotal": 2100
     },
     {
       "id": 14,
@@ -111,16 +163,24 @@
       "alt": "Placeholder Image",
       "title": "Cushions",
       "description": "Cushions come in a collection of various sizes. They can be used either as back cushions or for purely decorative purposes and provide soft pleasant comfort.",
-      "price": 1150.0
+      "price": 1150.0,
+      "quantity": 1,
+      "total": 1150.0,
+      "discountPercentage": 0,
+      "discountedTotal": 1150.0
     },
     {
       "id": 15,
-      "img": "https://static.vitra.com/media-resized/oxymZW275fN7h1rf7A1PHP1GzIzCrXbpc5Tp_HB9l-8/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzY0MTg5OTEvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC83NDc5OTY0MS5qcGc.jpg",
+      "thumbnail": "https://static.vitra.com/media-resized/oxymZW275fN7h1rf7A1PHP1GzIzCrXbpc5Tp_HB9l-8/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzY0MTg5OTEvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC83NDc5OTY0MS5qcGc.jpg",
       "alt": "Placeholder Image",
       "title": "Abalon Sofa",
       "subtitle": "Sample Subtitle 15",
       "description": "The iconic Abalon Sofa, named after the shell of a sea snail, has an organically curved shape that evokes a circle to which people feel drawn. The comfortably padded seat shell offers a place for quiet seclusion.",
-      "price": 3200.0
+      "price": 3200.0,
+      "quantity": 1,
+      "total": 3200.0,
+      "discountPercentage": 3,
+      "discountedTotal": 3104
     },
     {
       "id": 16,
@@ -128,7 +188,11 @@
       "alt": "Placeholder Image",
       "title": "Resting Bear ",
       "description": "Resting Animals whose poses exude a serene tranquillity. The largest is a knit-covered bear that can be used for a variety of functions, such as a stool, ottoman or backrest.",
-      "price": 3800.0
+      "price": 3800.0,
+      "quantity": 1,
+      "total": 3800.0,
+      "discountPercentage": 9,
+      "discountedTotal": 3458
     }
   ]
 }
