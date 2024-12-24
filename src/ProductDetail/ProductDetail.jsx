@@ -33,7 +33,7 @@ function ProductDetail() {
       });
   }, [productId]);
 
-  const handleAddtoCart = () => {
+  const handleAddtoCart = async () => {
     if (!user || !user.id) {
       navigate("/login");
       return;
@@ -45,34 +45,51 @@ function ProductDetail() {
     }
 
     const ProductToAdd = {
-      id: user.id,
-      product: {
-        id: item.id,
-        title: item.title,
-        price: item.price,
-        quantity: item.quantity,
-        discountPercentage: item.discountPercentage,
-        discountedTotal: item.discountedTotal,
-        thumbnail: item.thumbnail,
-      },
+      id: item.id,
+      title: item.title,
+      price: item.price,
+      total: item.price * item.quantity,
+      quantity: item.quantity, // Assuming you want to add one item at a time
+      discountPercentage: item.discountPercentage,
+      discountedTotal: item.discountedTotal,
+      thumbnail: item.thumbnail,
     };
 
-    fetch("http://localhost:3000/carts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(ProductToAdd),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Product added to cart:", data);
-        alert("Product added to cart successfully!");
-      })
-      .catch((error) => {
-        console.error("Error adding product to cart:", error);
-        alert("Failed to add product to cart. Please try again.");
+    try {
+      let response = await fetch(`http://localhost:3000/carts/${user.id}`);
+      let cart = await response.json();
+
+      const existingProductIndex = cart.products.findIndex(
+        (p) => p.id === ProductToAdd.id
+      );
+
+      if (existingProductIndex !== -1) {
+        // Product exists, increment the quantity
+        cart.products[existingProductIndex].quantity += ProductToAdd.quantity;
+        cart.products[existingProductIndex].total +=
+          ProductToAdd.price * ProductToAdd.quantity;
+        cart.products[existingProductIndex].discountedTotal +=
+          ProductToAdd.discountedTotal * ProductToAdd.quantity;
+      } else {
+        // Product does not exist, add it to the products array
+        cart.products.push(ProductToAdd);
+      }
+
+      // Update the cart with the new products array
+      await fetch(`http://localhost:3000/carts/${user.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(cart),
       });
+
+      console.log("Product added to cart successfully");
+      alert("Product added to cart successfully!");
+    } catch (error) {
+      console.error("Error adding product to cart:", error);
+      alert("Failed to add product to cart. Please try again.");
+    }
   };
 
   if (loading) {
@@ -89,7 +106,7 @@ function ProductDetail() {
         <img
           className={style.productImage}
           src={item.thumbnail}
-          alt={item.alt}
+          alt={item.title}
         />
       </div>
       <div className={style.contentContainer}>

@@ -1,11 +1,13 @@
-import React, { useContext, useEffect, useState } from 'react';
-import styles from './CartDetails.module.css';
-import UserContext from '../UserContext';
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from "react";
+import styles from "./CartDetails.module.css";
+import UserContext from "../UserContext";
+import { useNavigate } from "react-router-dom";
 import CheckOut from "../Checkout/Checkout";
 
 const CartDetails = () => {
-  const {user: {id: cartId}} = useContext(UserContext);
+  const {
+    user: { id: cartId },
+  } = useContext(UserContext);
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
 
@@ -15,18 +17,20 @@ const CartDetails = () => {
 
   const getCartDetails = async () => {
     if (!cartId) {
-			navigate('/login');
+      navigate("/login");
       return;
     }
 
     try {
       const response = await fetch(`http://localhost:3000/carts`);
       const cartData = await response.json();
-      const matchedCart = cartData.find(cart => cart.id === cartId.toString());
+      const matchedCart = cartData.find(
+        (cart) => cart.id === cartId.toString()
+      );
       setCart(matchedCart);
       console.log(matchedCart);
     } catch (error) {
-      console.error('Error fetching cart details:', error);
+      console.error("Error fetching cart details:", error);
     }
   };
 
@@ -35,58 +39,91 @@ const CartDetails = () => {
       <h1>Cart Details</h1>
       {cart && (
         <>
-        <div style={{ marginTop: '20px'}}>
-          {cart.products.map((product) => (
-            <div key={product.id} style={{display:'flex', flexDirection:'row', margin:'20px', alignItems:'center', borderStyle:'ridge', padding:'20px'}} >
-             <img src={product.thumbnail} alt={product.title} style={{width:'15%'}}/>
-             <div style={{ width: "30%", textAlign: "center" }}>
-                <h3>{product.title}</h3>
+          <div style={{ marginTop: "20px" }}>
+            {cart.products.map((product) => (
+              <div
+                key={product.id}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  margin: "20px",
+                  alignItems: "center",
+                  borderStyle: "ridge",
+                  padding: "20px",
+                }}
+              >
+                <img
+                  src={product.thumbnail}
+                  alt={product.title}
+                  style={{ width: "15%" }}
+                />
+                <div style={{ width: "30%", textAlign: "center" }}>
+                  <h3>{product.title}</h3>
+                </div>
+                <div style={{ flex: 1, textAlign: "center" }}>
+                  <p>
+                    Price: <br />${product.price}
+                  </p>
+                </div>
+                <div style={{ flex: 1, textAlign: "center" }}>
+                  <p>
+                    Quantity:
+                    <br />
+                    <br />
+                    {product.quantity}
+                  </p>
+                </div>
+                <div style={{ flex: 1, textAlign: "center" }}>
+                  <p>
+                    Total: <br />${product.total}
+                  </p>
+                </div>
+                <div style={{ flex: 1.5, textAlign: "center" }}>
+                  <p>
+                    Discount Percentage: <br /> {product.discountPercentage}%
+                  </p>
+                </div>
+                <div style={{ flex: 1.5, textAlign: "center" }}>
+                  <p>
+                    Discounted Total: <br /> ${product.discountedTotal}
+                  </p>
+                </div>
               </div>
-              <div style={{ flex: 1, textAlign: "center" }}>
-                <p>
-                  Price: <br />${product.price}
-                </p>
-              </div>
-              <div style={{ flex: 1, textAlign: "center" }}>
-                <p>
-                  Quantity:
-                  <br />
-                  <br />
-                  {product.quantity}
-                </p>
-              </div>
-              <div style={{ flex: 1, textAlign: "center" }}>
-                <p>
-                  Total: <br />${product.total}
-                </p>
-              </div>
-              <div style={{ flex: 1.5, textAlign: "center" }}>
-                <p>
-                  Discount Percentage: <br /> {product.discountPercentage}%
-                </p>
-              </div>
-              <div style={{ flex: 1.5, textAlign: "center" }}>
-                <p>
-                  Discounted Total: <br /> ${product.discountedTotal}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div style={{margin: "20px auto 0 auto",display: "flex",flexDirection: "column",padding: "20px",borderWidth: "1px",borderStyle: "solid", alignItems:'center', width:'50%', borderColor:'gray', borderRadius:'10px' }}>
+            ))}
+          </div>
+          <div
+            style={{
+              margin: "20px auto 0 auto",
+              display: "flex",
+              flexDirection: "column",
+              padding: "20px",
+              borderWidth: "1px",
+              borderStyle: "solid",
+              alignItems: "center",
+              width: "50%",
+              borderColor: "gray",
+              borderRadius: "10px",
+            }}
+          >
             <h2>Cart ID: {cart.id}</h2>
             <div className={styles.summary}>
-                <div className={styles.text}><p>Total Products: </p> {cart.totalProducts} </div>
-                <div className={styles.text}><p>Total Quantity: </p> {cart.totalQuantity}</div>
-                <div className={styles.text}><p>Total Price: </p>  {cart.total}</div>
-                <div className={styles.text}> <p>Discounted Total: </p>  {cart.discountedTotal}</div>
+              <div className={styles.text}>
+                <p>Total Products: </p> {cart.totalProducts}{" "}
+              </div>
+              <div className={styles.text}>
+                <p>Total Quantity: </p> {cart.totalQuantity}
+              </div>
+              <div className={styles.text}>
+                <p>Total Price: </p> {cart.total}
+              </div>
+              <div className={styles.text}>
+                {" "}
+                <p>Discounted Total: </p> {cart.discountedTotal}
+              </div>
             </div>
-                
-                
-               
-                <CheckOut/>
-                
-        </div>
+
+            <CheckOut />
+          </div>
         </>
       )}
     </div>
