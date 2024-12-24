@@ -7,10 +7,10 @@
           "id": 168,
           "title": "Annibale Colombo Sofa",
           "price": 32999.99,
-          "quantity": 3,
-          "total": 98999.97,
+          "quantity": 5,
+          "total": 164999.94999999998,
           "discountPercentage": 13.39,
-          "discountedTotal": 85743.87,
+          "discountedTotal": 142906.45669499997,
           "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png"
         },
         {
@@ -64,11 +64,11 @@
           "thumbnail": "https://static.vitra.com/media-resized/wqCBhc94669XaiuWhKB3sONlcyXYjLJnK5B0Lb4kvhs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzM0MDk5NTYvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80NzQ3MDU3MC5qcGc.jpg"
         }
       ],
-      "total": 103774.85,
-      "discountedTotal": 89686.65,
+      "total": 169774.83000000002,
+      "discountedTotal": 146849.23669499997,
       "userId": 33,
       "totalProducts": 4,
-      "totalQuantity": 15
+      "totalQuantity": 17
     },
     {
       "id": "2",
@@ -77,58 +77,28 @@
           "id": 144,
           "title": "Skiver L Shape Sofa Set (3 Seater + Left Aligned Chaise)",
           "price": 44.99,
-          "quantity": 4,
-          "total": 179.96,
+          "quantity": 9,
+          "total": 404.91,
           "discountPercentage": 11.47,
-          "discountedTotal": 159.32,
+          "discountedTotal": 358.46682300000003,
           "thumbnail": "https://ik.imagekit.io/2xkwa8s1i/img/sofa-sets/skiver/6seater/WSFASKRL3CLRTN/1.jpg?tr"
         },
         {
-          "id": 124,
-          "title": "Nayena Study Table",
-          "price": 899.99,
-          "quantity": 4,
-          "total": 3599.96,
-          "discountPercentage": 8.03,
-          "discountedTotal": 3310.88,
-          "thumbnail": "https://ik.imagekit.io/2xkwa8s1i/img/study-tables/lifestyle/nayena.jpg?tr=w-1200"
-        },
-        {
-          "id": 148,
-          "title": "Taurus Engineered Wood Bed ",
-          "price": 9.99,
-          "quantity": 4,
-          "total": 39.96,
-          "discountPercentage": 11.24,
-          "discountedTotal": 35.47,
-          "thumbnail": "https://ik.imagekit.io/2xkwa8s1i/img/engineered-wood-bed/taurus/new/0.jpg?tr=w-2544"
-        },
-        {
-          "id": 122,
-          "title": "Cashmere Plus 4 Door Wardrobe ",
-          "price": 299.99,
-          "quantity": 3,
-          "total": 899.97,
-          "discountPercentage": 19.64,
-          "discountedTotal": 723.22,
-          "thumbnail": "https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/cashmere_wardrobe/WWRB4S4D2MH2CASHMEREPWF/1.jpg?tr=w-1200"
-        },
-        {
-          "id": 110,
-          "title": "Grand Repos",
-          "price": 14.99,
-          "quantity": 5,
-          "total": 74.95,
-          "discountPercentage": 19.87,
-          "discountedTotal": 60.06,
-          "thumbnail": "https://static.vitra.com/media-resized/ybhyb1BxGPbG2QB_RPImN2I0inAVkxAycmP1HRQX6-A/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNzg0MTkvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8zMzIyMzU4MC5qcGc.jpg"
+          "id": 98,
+          "title": "Coffee Table",
+          "price": 13999.99,
+          "quantity": 2,
+          "total": 27999.98,
+          "discountPercentage": 16.35,
+          "discountedTotal": 23421.98327,
+          "thumbnail": "https://static.vitra.com/media-resized/SBz8-3I8RhatFNXa3LHIYK_3Mtx0iFfP4XfkUd8LUW4/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzNjQ3ODAvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjExNzc2NS5qcGc.jpg"
         }
       ],
-      "total": 4794.8,
-      "discountedTotal": 4288.95,
+      "total": 28404.89,
+      "discountedTotal": 23780.450093,
       "userId": 142,
-      "totalProducts": 5,
-      "totalQuantity": 20
+      "totalProducts": 2,
+      "totalQuantity": 11
     },
     {
       "id": "3",
