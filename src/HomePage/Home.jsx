@@ -9,7 +9,7 @@ import Form from '../LoginPage/Form';
 import { Route, Router, Routes } from 'react-router-dom';
 import UserData from './userdata';
 // import Cart from '../Cart/Cart';
-import CartDetails from '../Cart/Cart';
+import Cart from '../Cart/Cart';
 import CheckOut from '../Checkout/Checkout';
 export default function Home() {
     return (

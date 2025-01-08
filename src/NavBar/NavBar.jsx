@@ -60,7 +60,7 @@ export default function NavBar() {
                   Contact
                 </Link>
               </li>
-              {!user.firstName ? (
+              {!user ? (
                 <li className={styles.lists}>
                   <Link className={styles.alist} to={"/login"}>
                     Login

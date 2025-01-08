@@ -54,8 +54,14 @@ export default function SignUpForm() {
         .catch(err => console.error(err));
     }
 
-    function onSuccess() {
+    async function onSuccess() {
+        const userId = (await axios.get(`http://localhost:3000/users?email=${encodeURI(email)}`)).data[0].id;
+        axios.post('http://localhost:3000/carts', {
+            userId,     
+            products: []
+        });
         const user = {
+            id: userId,
             firstName: fName,
             lastName: lName,
             username,

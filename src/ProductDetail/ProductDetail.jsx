@@ -16,7 +16,7 @@ function ProductDetail() {
     window.scrollTo(0, 0);
 
     // Fetch data dynamically from the JSON server
-    fetch(`http://localhost:4000/yehaidata/${productId}`)
+    fetch(`http://localhost:3000/products/${productId}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch item");

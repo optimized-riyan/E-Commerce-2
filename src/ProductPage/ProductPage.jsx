@@ -8,7 +8,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     // Fetch data from the JSON server
-    fetch("http://localhost:4000/yehaidata")
+    fetch("http://localhost:3000/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");

@@ -1,10 +1,11 @@
 import LanguageDropdown from "./LanguageDropdown";
 import styles from './Header.module.css';
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <div className={styles.container}>
-            <img src="src/NavBar/logo.png" alt="" height="50px" />
+            <Link to='/'><img src="src/NavBar/logo.png" alt="" height="50px" /></Link>
             <div className={styles.contRight}>
                 <LanguageDropdown />
                 <svg className={styles.phone} width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

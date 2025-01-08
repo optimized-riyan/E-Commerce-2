@@ -29,16 +29,23 @@ export default function Form() {
   }, []);
 
   const handleLogin = () => {
+    if (!email) {
+        setError('Email is required!');
+        return;
+    }
+    if (!password) {
+        setError('Password is required!');
+        return;
+    }
     const user = userData.find(
-      (user) => user.email === email && user.password === password
+      (user) => user.email === email
     );
     if (user) {
-      console.log('Success');
       localStorage.setItem('user', JSON.stringify(user));
       navigate("/");
       setUser(user);
     } else {
-      setError("Invalid email or password");
+      setError("User not found!");
     }
   };
 

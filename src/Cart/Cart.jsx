@@ -3,9 +3,10 @@ import styles from './CartDetails.module.css';
 import UserContext from '../UserContext';
 import { useNavigate } from 'react-router-dom';
 import CheckOut from "../Checkout/Checkout";
+import axios from 'axios';
 
-const CartDetails = () => {
-  const { user: { id: cartId } } = useContext(UserContext);
+const Cart = () => {
+  const cartId = useContext(UserContext).user?.id ?? null;
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
 
@@ -20,12 +21,8 @@ const CartDetails = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/carts`);
-      const cartData = await response.json();
-      const matchedCart = cartData.find(
-        (cart) => cart.id === cartId.toString()
-      );
-      setCart(matchedCart);
+      const response = await axios.get(`http://localhost:3000/carts/${cartId}`);
+      setCart(response.data);
     } catch (error) {
       console.error("Error fetching cart details:", error);
     }
@@ -193,4 +190,4 @@ const CartDetails = () => {
   );
 };
 
-export default CartDetails;
+export default Cart;
