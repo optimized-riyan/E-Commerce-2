@@ -2099,6 +2099,76 @@
                 "network": "Ethereum (ERC20)"
             },
             "role": "user"
+        },
+        {
+            "id": 301,
+            "firstName": "Yash",
+            "lastName": "Pahlani",
+            "maidenName": "",
+            "age": 25,
+            "gender": "male",
+            "email": "yashpahlani04@gmail.com",
+            "phone": "+1 555-555-5555",
+            "username": "yashp",
+            "password": "yashpass",
+            "birthDate": "1998-01-01",
+            "image": "https://dummyjson.com/icon/yashp/128",
+            "bloodGroup": "B+",
+            "height": 175.0,
+            "weight": 70.0,
+            "eyeColor": "Brown",
+            "hair": {
+                "color": "Black",
+                "type": "Curly"
+            },
+            "ip": "192.168.1.1",
+            "address": {
+                "address": "1234 Elm Street",
+                "city": "Anytown",
+                "state": "California",
+                "stateCode": "CA",
+                "postalCode": "90210",
+                "coordinates": {
+                    "lat": 34.052235,
+                    "lng": -118.243683
+                },
+                "country": "United States"
+            },
+            "macAddress": "00:1B:44:11:3A:B7",
+            "university": "University of California, Los Angeles",
+            "bank": {
+                "cardExpire": "12/25",
+                "cardNumber": "1234567812345678",
+                "cardType": "Visa",
+                "currency": "USD",
+                "iban": "US12345678901234567890"
+            },
+            "company": {
+                "department": "Engineering",
+                "name": "Tech Solutions Inc.",
+                "title": "Software Engineer",
+                "address": {
+                    "address": "5678 Oak Street",
+                    "city": "Tech City",
+                    "state": "California",
+                    "stateCode": "CA",
+                    "postalCode": "90001",
+                    "coordinates": {
+                        "lat": 37.774929,
+                        "lng": -122.419416
+                    },
+                    "country": "United States"
+                }
+            },
+            "ein": "12-3456789",
+            "ssn": "123-45-6789",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+            "crypto": {
+                "coin": "Bitcoin",
+                "wallet": "0x1234567890abcdef1234567890abcdef12345678",
+                "network": "Ethereum (ERC20)"
+            },
+            "role": "user"
         }
     ],
     "total": 208,

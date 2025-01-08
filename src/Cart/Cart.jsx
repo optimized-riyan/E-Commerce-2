@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect, useState } from 'react';
 import styles from './CartDetails.module.css';
 import UserContext from '../UserContext';
@@ -23,10 +22,12 @@ const CartDetails = () => {
     try {
       const response = await fetch(`http://localhost:3000/carts`);
       const cartData = await response.json();
-      const matchedCart = cartData.find(cart => cart.id === cartId.toString());
+      const matchedCart = cartData.find(
+        (cart) => cart.id === cartId.toString()
+      );
       setCart(matchedCart);
     } catch (error) {
-      console.error('Error fetching cart details:', error);
+      console.error("Error fetching cart details:", error);
     }
   };
 
@@ -132,14 +133,13 @@ const CartDetails = () => {
                   <p>
                     Quantity:
                     <br />
-                    <button style={{margin:"5px"}} onClick={() => updateQuantity(product.id, -1)}>-</button>
+                    <br />
                     {product.quantity}
-                    <button style={{margin:"5px"}} onClick={() => updateQuantity(product.id, 1)}>+</button>
                   </p>
                 </div>
                 <div style={{ flex: 1, textAlign: "center" }}>
                   <p>
-                    Total: <br />${product.total.toFixed(2)}
+                    Total: <br />${product.total}
                   </p>
                 </div>
                 <div style={{ flex: 1.5, textAlign: "center" }}>
@@ -149,11 +149,8 @@ const CartDetails = () => {
                 </div>
                 <div style={{ flex: 1.5, textAlign: "center" }}>
                   <p>
-                    Discounted Total: <br /> ${product.discountedTotal.toFixed(2)}
+                    Discounted Total: <br /> ${product.discountedTotal}
                   </p>
-                </div>
-                <div style={{ flex: 1, textAlign: "center" }}>
-                  <button onClick={() => removeProduct(product.id)}>Remove Product</button>
                 </div>
               </div>
             ))}
@@ -175,16 +172,17 @@ const CartDetails = () => {
             <h2>Cart ID: {cart.id}</h2>
             <div className={styles.summary}>
               <div className={styles.text}>
-                <p>Total Products: </p> {cart.totalProducts}
+                <p>Total Products: </p> {cart.totalProducts}{" "}
               </div>
               <div className={styles.text}>
                 <p>Total Quantity: </p> {cart.totalQuantity}
               </div>
               <div className={styles.text}>
-                <p>Total Price: </p> ${cart.total.toFixed(2)}
+                <p>Total Price: </p> {cart.total}
               </div>
               <div className={styles.text}>
-                <p>Discounted Total: </p> ${cart.discountedTotal.toFixed(2)}
+                {" "}
+                <p>Discounted Total: </p> {cart.discountedTotal}
               </div>
             </div>
             <CheckOut />

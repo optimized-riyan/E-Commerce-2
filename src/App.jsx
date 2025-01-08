@@ -13,6 +13,7 @@ import UserContext from "./UserContext";
 import { useEffect, useState } from "react";
 import SignUp from './LoginPage/SignUp';
 
+
 function App() {
   const [user, setUser] = useState({});
 
