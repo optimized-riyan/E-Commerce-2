@@ -41,7 +41,7 @@ useEffect(()=>{
     if (user) {
       console.log('Success');
       localStorage.setItem('user', JSON.stringify(user));
-      navigate("/profile");
+      navigate("/");
       setUser(user);
     } else {
       console.log("Invalid email or password");
@@ -55,7 +55,7 @@ useEffect(()=>{
             <FormControl label="Email" type="email" rootStyleOverride={{ margin: '1rem 0' }}  onChange={(e) => setEmail(e.target.value)}/>
             <FormControl label="Password" type="password" onChange={(e) => setPassword(e.target.value)}/>
             <FancyButton text="LOGIN" width="230px" margin="3rem auto .5rem auto" onClick ={()=>handleLogin()}/>
-            <FancyButton text="FORGOT PASSWORD?" width="230px" margin=".5rem auto 3rem auto" />
+            <FancyButton text="NEW HERE?" width="230px" margin=".5rem auto 3rem auto" onClick={() => navigate('/signup')} />
         </div>
     );
 }
