@@ -37,40 +37,22 @@ export default function Form() {
       (user) => user.email === email && user.password === password
     );
     if (user) {
-      console.log("Success");
-      localStorage.setItem("user", JSON.stringify(user));
-      navigate("/profile");
+      console.log('Success');
+      localStorage.setItem('user', JSON.stringify(user));
+      navigate("/");
       setUser(user);
     } else {
       console.log("Invalid email or password");
     }
   };
 
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Login</h1>
-      <FormControl
-        label="Email"
-        type="email"
-        rootStyleOverride={{ margin: "1rem 0" }}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <FormControl
-        label="Password"
-        type="password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <FancyButton
-        text="LOGIN"
-        width="230px"
-        margin="3rem auto .5rem auto"
-        onClick={() => handleLogin()}
-      />
-      <FancyButton
-        text="FORGOT PASSWORD?"
-        width="230px"
-        margin=".5rem auto 3rem auto"
-      />
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.title}>Login</h1>
+            <FormControl label="Email" type="email" rootStyleOverride={{ margin: '1rem 0' }}  onChange={(e) => setEmail(e.target.value)}/>
+            <FormControl label="Password" type="password" onChange={(e) => setPassword(e.target.value)}/>
+            <FancyButton text="LOGIN" width="230px" margin="3rem auto .5rem auto" onClick ={()=>handleLogin()}/>
+            <FancyButton text="NEW HERE?" width="230px" margin=".5rem auto 3rem auto" onClick={() => navigate('/signup')} />
+        </div>
+    );
 }

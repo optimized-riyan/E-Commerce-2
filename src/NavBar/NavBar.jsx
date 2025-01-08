@@ -15,7 +15,6 @@ export default function NavBar() {
         <div className={styles.box}>
           <nav className={styles.navs}>
             <div className={styles.logo}>
-              {/* <img src="src/NavBar/logo.png" alt="" height="50px" /> */}
               <button
                 style={{
                   backgroundColor: "transparent",
@@ -26,7 +25,7 @@ export default function NavBar() {
                 }}
                 onClick={handlelogoClick}
               >
-                <img src="src/NavBar/logo.png" alt="" height="50px" />
+                <img src="src/NavBar/logo.png" style={{ cursor: 'pointer' }} alt="" height="50px" />
               </button>
             </div>
 
