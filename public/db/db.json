@@ -2,6 +2,7 @@
   "carts": [
     {
       "id": "1",
+      "userId": "1",
       "products": [
         {
           "id": 168,
@@ -49,6 +50,11 @@
       "id": "d7f6",
       "userId": "2332",
       "products": []
+    },
+    {
+      "id": "6a8a",
+      "userId": "942f",
+      "products": []
     }
   ],
   "users": [
@@ -67,6 +73,14 @@
       "username": "riyan",
       "email": "riyan0350@gmail.com",
       "password": "Riyan2112!"
+    },
+    {
+      "id": "942f",
+      "firstName": "Yash",
+      "lastName": "Pahlani",
+      "username": "yahs",
+      "email": "yash@gmail.com",
+      "password": "1234123$"
     }
   ],
   "products": [

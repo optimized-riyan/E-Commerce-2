@@ -4,6 +4,7 @@ import UserContext from '../UserContext';
 import { useNavigate } from 'react-router-dom';
 import CheckOut from "../Checkout/Checkout";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const cartId = useContext(UserContext).user?.id ?? null;
@@ -21,8 +22,9 @@ const Cart = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:3000/carts/${cartId}`);
-      setCart(response.data);
+      const response = await axios.get(`http://localhost:3000/carts?userId=${cartId}`);
+      console.log(response.data);
+      setCart(response.data[0]);
     } catch (error) {
       console.error("Error fetching cart details:", error);
     }
@@ -93,6 +95,8 @@ const Cart = () => {
 
   if (!cart) {
     return <div>Loading...</div>;
+  } else if (cart.products.length === 0) {
+    return <div style={{ margin: '1rem 1rem' }}>Your cart is empty! Do you want to head to the {<Link to='/products' style={{ textDecoration: 'underline', color: 'black' }}>products page?</Link>}</div>;
   }
 
   return (
