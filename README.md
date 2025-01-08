@@ -11,10 +11,10 @@ Team Member:
 ## Pages
 
 - [x] Login
-- [ ] Checkout
+- [x] Checkout
 - [x]  Cart
 - [x] Product List
 - [x] Product Details
 - [x] About Us
 - [x] Contact Us
-- [ ] User Profile
+- [x] User Profile
