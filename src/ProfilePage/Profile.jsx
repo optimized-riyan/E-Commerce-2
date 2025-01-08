@@ -1,7 +1,6 @@
 import styles from './Profile.module.css';
 import FancyButton from '../FancyButton';
 import { useContext, useEffect, useState } from 'react';
-import axios from 'axios';
 import UserContext from '../UserContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,7 +14,7 @@ export default function Profile() {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.helloMsg}>HELLO {firstName}</h1>
+            <h1 className={styles.helloMsg}>HELLO {firstName}!</h1>
             <table className={styles.fieldTable}>
                 <tbody>
                     <tr>
