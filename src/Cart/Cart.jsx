@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import FancyButton from '../FancyButton';
 
 const Cart = () => {
-  const cartId = useContext(UserContext).user?.cartId ?? null;
+  const cartId = useContext(UserContext).user?.cartId;
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
 

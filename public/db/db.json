@@ -49,15 +49,6 @@
       "discountedTotal": 88267.47,
       "totalProducts": 4,
       "totalQuantity": 14
-    },
-    {
-      "id": "8354",
-      "userId": "5c4e",
-      "products": [],
-      "total": 0,
-      "discountedTotal": 0,
-      "totalProducts": 0,
-      "totalQuantity": 0
     }
   ],
   "users": [
@@ -69,14 +60,6 @@
       "username": "emilys",
       "password": "emilyspass",
       "cartId": "1"
-    },
-    {
-      "id": "5c4e",
-      "firstName": "riyan",
-      "lastName": "g",
-      "username": "riyan",
-      "email": "riyan0350@gmail.com",
-      "password": "Riyan2112!"
     }
   ],
   "products": [

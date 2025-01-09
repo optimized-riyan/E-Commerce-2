@@ -64,13 +64,15 @@ export default function SignUpForm() {
             totalProducts: 0,
             totalQuantity: 0
         });
+        await axios.patch(`http://localhost:3000/users/${userId}`, {
+            cartId
+        });
         const user = {
             id: userId,
             firstName: fName,
             lastName: lName,
             username,
             email,
-            password,
             cartId
         }
         localStorage.setItem('user', JSON.stringify(user));
