@@ -7,20 +7,19 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     productName: '',
     serviceRequest: '',
-     message: '',
+    message: '',
     firstName: '',
     surname: '',
     gender: '',
     company: '',
     streetAddress: '',
     streetNumber: '',
-    postcode: '',
+    postcode: '', //regex
     city: '',
-    phoneNumber: '',
-    email: '',
-    country: '',
-   
+    phoneNumber: '', // regex
+    email: '', // regex
   });
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,8 +31,22 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    if (!formData.productName) setError('Product name is required!');
+    else if (!formData.serviceRequest) setError('Service request type is required!');
+    else if (!formData.firstName) setError('First name is required!');
+    else if (!formData.surname) setError('Last name is required!');
+    else if (!formData.gender) setError('Gender is required!');
+    else if (!formData.company) setError('Company name is required!');
+    else if (!formData.streetAddress) setError('Street address is required!');
+    else if (!formData.streetNumber) setError('Street number is required!');
+    else if (!formData.postcode) setError('Postal code is required!');
+    else if (!formData.city) setError('City name is required!');
+    else if (!formData.phoneNumber) setError('Phone number is required!');
+    else if (!formData.email) setError('Email is required!');
+    else if (!/^[0-9]{6}$/.test(formData.postcode)) setError('Please enter a valid postal code!');
+    else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) setError('Please enter a valid phone number!');
+    else if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(formData.email)) setError('Please enter a valid email address!');
+    else setError('');
   };
 
   return (
@@ -46,12 +59,12 @@ const ContactForm = () => {
           name="productName"
           placeholder="Product name"
           value={formData.productName}
-          onChange={handleChange} required
+          onChange={handleChange}
         />
         <select className={styles.box}
           name="serviceRequest"
           value={formData.serviceRequest}
-          onChange={handleChange} required
+          onChange={handleChange}
         >
           <option value="" disabled selected>Service Request</option>
           <option value="spare">Spare parts</option>
@@ -67,7 +80,7 @@ const ContactForm = () => {
           name="message"
           placeholder="Your message"
           value={formData.message}
-          onChange={handleChange} required
+          onChange={handleChange}
         />
       </div>
       <div>
@@ -79,7 +92,7 @@ const ContactForm = () => {
           name="firstName"
           placeholder="First name"
           value={formData.firstName}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
       
       
@@ -99,7 +112,7 @@ const ContactForm = () => {
           name="gender"
           placeholder="Gender"
           value={formData.gender}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
         
         <input
@@ -108,7 +121,7 @@ const ContactForm = () => {
           name="company"
           placeholder="Company"
           value={formData.company}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
       </div>
       <div>
@@ -118,7 +131,7 @@ const ContactForm = () => {
           name="streetAddress"
           placeholder="Street address"
           value={formData.streetAddress}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
         <input
           className={styles.box}
@@ -126,7 +139,7 @@ const ContactForm = () => {
           name="streetNumber"
           placeholder="Street number"
           value={formData.streetNumber}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
       </div>
       <div>
@@ -136,7 +149,7 @@ const ContactForm = () => {
           name="postcode"
           placeholder="Postcode"
           value={formData.postcode}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
         <input
           className={styles.box}
@@ -144,7 +157,7 @@ const ContactForm = () => {
           name="city"
           placeholder="City"
           value={formData.city}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
       </div>
       <div>
@@ -154,7 +167,7 @@ const ContactForm = () => {
           name="phoneNumber"
           placeholder="Phone number"
           value={formData.phoneNumber}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
         <input 
           className={styles.box}
@@ -162,27 +175,11 @@ const ContactForm = () => {
           name="email"
           placeholder="Your E-Mail address"
           value={formData.email}
-          onChange={handleChange} required
+          onChange={handleChange} 
         />
       </div>
-      <div>
-        <select className={styles.box}
-          name="country"
-          value={formData.country}
-          onChange={handleChange} required
-        >
-          <option value="" disabled selected>Country</option>
-          <option value="india">India</option>
-          <option value="us">US</option>
-          <option value="uk">United Kingdom</option>
-          <option value="australia">Australia</option>
-          <option value="srilanka">SriLanka</option>
-          <option value="china">China</option>
-          <option value="italy">Italy</option>
-          
-        </select>
-      </div>
-      <button  className={styles.submit}type="submit">Submit</button>
+      <pre style={{ color: 'red', whiteSpace: 'pre-line' }}>{error}</pre>
+      <button className={styles.submit} type="submit">Submit</button>
     </form>
   );
 };
