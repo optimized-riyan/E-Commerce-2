@@ -69,6 +69,36 @@
       "discountedTotal": 0,
       "totalProducts": 0,
       "totalQuantity": 0
+    },
+    {
+      "id": "3f24",
+      "userId": "02bf",
+      "products": [
+        {
+          "id": "7",
+          "title": "Kado Office ",
+          "price": 33800,
+          "total": 67600,
+          "quantity": 2,
+          "discountPercentage": 20,
+          "discountedTotal": 54080,
+          "thumbnail": "https://static.vitra.com/media-resized/wqCBhc94669XaiuWhKB3sONlcyXYjLJnK5B0Lb4kvhs/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzM0MDk5NTYvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC80NzQ3MDU3MC5qcGc.jpg"
+        },
+        {
+          "id": "6",
+          "title": "Eames Desk Unit EDU",
+          "price": 8750,
+          "total": 8750,
+          "quantity": 1,
+          "discountPercentage": 5,
+          "discountedTotal": 8312.5,
+          "thumbnail": "https://static.vitra.com/media-resized/2-5oWcZ7Ud47gO3toeF_aIym609FZzoHKjVr1hgQfH0/fill/750/0/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzEzODI3Nzgvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC8xNjI3NzQwMy5qcGc.jpg"
+        }
+      ],
+      "total": 76350,
+      "discountedTotal": 62392.5,
+      "totalProducts": 2,
+      "totalQuantity": 3
     }
   ],
   "users": [
@@ -88,6 +118,14 @@
       "username": "riyan",
       "email": "riyan0350@gmail.com",
       "password": "Riyan2112!"
+    },
+    {
+      "id": "02bf",
+      "firstName": "Abhishek",
+      "lastName": "Chhabria",
+      "username": "abhishekk",
+      "email": "abc@gmail.com",
+      "password": "Abhishek@"
     }
   ],
   "products": [

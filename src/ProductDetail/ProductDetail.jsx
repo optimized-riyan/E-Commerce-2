@@ -48,10 +48,11 @@ function ProductDetail() {
       id: item.id,
       title: item.title,
       price: item.price,
-      total: item.price * item.quantity,
-      quantity: item.quantity, // Assuming you want to add one item at a time
+      total: item.price,
+      quantity: 1, // Assuming you want to add one item at a time
       discountPercentage: item.discountPercentage,
       discountedTotal: item.discountedTotal,
+      discountedTotal: item.price * (1 - item.discountPercentage / 100), // Discounted total for one item
       thumbnail: item.thumbnail,
     };
 
@@ -74,6 +75,12 @@ function ProductDetail() {
         // Product does not exist, add it to the products array
         cart.products.push(ProductToAdd);
       }
+
+      cart.totalProducts = cart.products.length;
+      cart.totalQuantity = cart.products.reduce((sum, p) => sum + p.quantity, 0);
+      cart.total = cart.products.reduce((sum, p) => sum + p.total, 0);
+      cart.discountedTotal = cart.products.reduce((sum, p) => sum + p.discountedTotal, 0);
+
 
       // Update the cart with the new products array
       await fetch(`http://localhost:3000/carts/${cartId}`, {
