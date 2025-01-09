@@ -29,12 +29,12 @@
     font-size: 16px;
     line-height: 17px;
     margin-bottom: 0.9rem;
-    
+    border-bottom: solid #2d2d32;
 }
     
 
 .heading:hover{
-  border-bottom: solid #f1e2b4 ;
+  border-bottom-color: #f1e2b4;
   
 }
 

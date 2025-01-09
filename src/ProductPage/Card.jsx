@@ -7,7 +7,7 @@ const Card = (props) => {
     <div>
       <Link
         className={myStyle.linkCard}
-        to={`/products/detail/${props.id}`}
+        to={`/products/${props.id}`}
         key={props.id}
       >
         <div className={myStyle.card}>

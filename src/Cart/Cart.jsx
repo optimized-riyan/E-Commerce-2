@@ -1,12 +1,13 @@
-
 import React, { useContext, useEffect, useState } from 'react';
 import styles from './CartDetails.module.css';
 import UserContext from '../UserContext';
 import { useNavigate } from 'react-router-dom';
 import CheckOut from "../Checkout/Checkout";
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-const CartDetails = () => {
-  const { user: { id: cartId } } = useContext(UserContext);
+const Cart = () => {
+  const cartId = useContext(UserContext).user?.id ?? null;
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
 
@@ -21,12 +22,9 @@ const CartDetails = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/carts`);
-      const cartData = await response.json();
-      const matchedCart = cartData.find(
-        (cart) => cart.id === cartId.toString()
-      );
-      setCart(matchedCart);
+      const response = await axios.get(`http://localhost:3000/carts?userId=${cartId}`);
+      console.log(response.data);
+      setCart(response.data[0]);
     } catch (error) {
       console.error("Error fetching cart details:", error);
     }
@@ -97,6 +95,8 @@ const CartDetails = () => {
 
   if (!cart) {
     return <div>Loading...</div>;
+  } else if (cart.products.length === 0) {
+    return <div style={{ margin: '1rem 1rem' }}>Your cart is empty! Do you want to head to the {<Link to='/products' style={{ textDecoration: 'underline', color: 'black' }}>products page?</Link>}</div>;
   }
 
   return (
@@ -197,4 +197,4 @@ const CartDetails = () => {
   );
 };
 
-export default CartDetails;
+export default Cart;

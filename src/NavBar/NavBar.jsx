@@ -4,7 +4,7 @@ import styles from "./NavDesign.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import UserContext from "../UserContext";
 export default function NavBar() {
-  const { user } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
   const handlelogoClick = () => {
     navigate("");
@@ -60,11 +60,21 @@ export default function NavBar() {
                   Contact
                 </Link>
               </li>
-              {!user.firstName && (
+              {!user ? (
                 <li className={styles.lists}>
                   <Link className={styles.alist} to={"/login"}>
                     Login
                   </Link>
+                </li>
+              ) : (
+                <li className={`${styles.lists} ${styles.alist}`} style={{ cursor: 'pointer' }}
+                    onClick={() => {
+                        localStorage.removeItem('user');
+                        setUser(undefined);
+                        navigate('/login');
+                    }}
+                >
+                    Logout
                 </li>
               )}
             </ul>
