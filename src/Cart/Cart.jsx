@@ -5,11 +5,21 @@ import { useNavigate } from 'react-router-dom';
 import CheckOut from "../Checkout/Checkout";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import FancyButton from '../FancyButton';
 
 const Cart = () => {
   const cartId = useContext(UserContext).user?.cartId ?? null;
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
+
+  const buttonStyle = {
+    margin:"5px",
+    borderRadius: '50%',
+    border: '1px solid',
+    backgroundColor: '#00000000',
+    width: '20px',
+    cursor: 'pointer',
+  };
 
   useEffect(() => {
     getCartDetails();
@@ -134,9 +144,11 @@ const Cart = () => {
                   <p>
                     Quantity:
                     <br />
-                    <button style={{margin:"5px"}} onClick={() => updateQuantity(product.id, -1)}>-</button>
+                    <button style={{...buttonStyle, ...{marginRight: '.5rem'}}} onClick={() => updateQuantity(product.id, -1)}>
+                        <p style={{ position: 'relative', top: '-12.5%' }}>-</p>
+                    </button>
                     {product.quantity}
-                    <button style={{margin:"5px"}} onClick={() => updateQuantity(product.id, 1)}>+</button>
+                    <button style={{...buttonStyle, ...{marginLeft: '.5rem'}}}  onClick={() => updateQuantity(product.id, 1)}>+</button>
                   </p>
                 </div>
                 <div style={{ flex: 1, textAlign: "center" }}>
@@ -155,7 +167,7 @@ const Cart = () => {
                   </p>
                 </div>
                 <div style={{ flex: 1, textAlign: "center" }}>
-                  <button onClick={() => removeProduct(product.id)}>Remove Product</button>
+                  <FancyButton onClick={() => removeProduct(product.id)} text="Remove Product" width='7rem' margin='0 1rem 0 1rem' />
                 </div>
               </div>
             ))}
