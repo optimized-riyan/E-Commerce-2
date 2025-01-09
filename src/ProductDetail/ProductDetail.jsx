@@ -8,7 +8,8 @@ function ProductDetail() {
   const { id } = useParams();
   const productId = parseInt(id);
   const navigate = useNavigate();
-  const { user, user: {cartId} } = useContext(UserContext);
+  const { user } = useContext(UserContext);
+  const cartId = user?.cartId;
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
