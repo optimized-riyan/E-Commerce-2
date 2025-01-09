@@ -99,6 +99,26 @@
       "discountedTotal": 62392.5,
       "totalProducts": 2,
       "totalQuantity": 3
+    },
+    {
+      "id": "3828",
+      "userId": "1c63",
+      "products": [
+        {
+          "id": "3",
+          "title": "Knoll Saarinen Executive Conference Chair",
+          "price": 3600,
+          "total": 3600,
+          "quantity": 1,
+          "discountPercentage": 8,
+          "discountedTotal": 3312,
+          "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/3.png"
+        }
+      ],
+      "total": 3600,
+      "discountedTotal": 3312,
+      "totalProducts": 1,
+      "totalQuantity": 1
     }
   ],
   "users": [
@@ -112,20 +132,12 @@
       "cartId": "1"
     },
     {
-      "id": "311b",
+      "id": "1c63",
       "firstName": "riyan",
       "lastName": "g",
       "username": "riyan",
-      "email": "riyan0350@gmail.com",
+      "email": "riyan@gmail.com",
       "password": "Riyan2112!"
-    },
-    {
-      "id": "02bf",
-      "firstName": "Abhishek",
-      "lastName": "Chhabria",
-      "username": "abhishekk",
-      "email": "abc@gmail.com",
-      "password": "Abhishek@"
     }
   ],
   "products": [
