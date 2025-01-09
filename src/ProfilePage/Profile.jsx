@@ -5,11 +5,15 @@ import UserContext from '../UserContext';
 import { useNavigate } from 'react-router-dom';
 
 export default function Profile() {
-    const { user: {firstName, lastName, username, email} } = useContext(UserContext);
+    const { user } = useContext(UserContext);
+    const firstName = user?.firstName;
+    const lastName = user?.lastName;
+    const username = user?.username;
+    const email = user?.email;
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!firstName) navigate('/login');
+        if (!user) navigate('/login');
     }, []);
 
     return (
