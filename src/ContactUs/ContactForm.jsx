@@ -46,7 +46,10 @@ const ContactForm = () => {
     else if (!/^[0-9]{6}$/.test(formData.postcode)) setError('Please enter a valid postal code!');
     else if (!/^[0-9]{10}$/.test(formData.phoneNumber)) setError('Please enter a valid phone number!');
     else if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(formData.email)) setError('Please enter a valid email address!');
-    else setError('');
+    else {
+      setError('');
+      alert('Your Form is submitted successfully!')
+    }
   };
 
   return (
@@ -59,7 +62,7 @@ const ContactForm = () => {
           name="productName"
           placeholder="Product name"
           value={formData.productName}
-          onChange={handleChange}
+          onChange={handleChange} 
         />
         <select className={styles.box}
           name="serviceRequest"
@@ -92,7 +95,7 @@ const ContactForm = () => {
           name="firstName"
           placeholder="First name"
           value={formData.firstName}
-          onChange={handleChange} 
+          onChange={handleChange}
         />
       
       
@@ -102,18 +105,21 @@ const ContactForm = () => {
           name="surname"
           placeholder="Surname"
           value={formData.surname}
-          onChange={handleChange}
+          onChange={handleChange} 
         />
         </div>
         <div>
-         <input
-          className={styles.box}
-          type="text"
+        <select className={styles.box}
           name="gender"
-          placeholder="Gender"
           value={formData.gender}
           onChange={handleChange} 
-        />
+        >
+          <option value="" disabled selected>Gender</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+    
+          
+        </select>
         
         <input
           className={styles.box}
@@ -135,7 +141,7 @@ const ContactForm = () => {
         />
         <input
           className={styles.box}
-          type="text"
+          type="number"
           name="streetNumber"
           placeholder="Street number"
           value={formData.streetNumber}
@@ -145,11 +151,11 @@ const ContactForm = () => {
       <div>
         <input
           className={styles.box}
-          type="text"
+          type="number"
           name="postcode"
           placeholder="Postcode"
           value={formData.postcode}
-          onChange={handleChange} 
+          onChange={handleChange}
         />
         <input
           className={styles.box}
