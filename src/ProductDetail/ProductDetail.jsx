@@ -8,7 +8,7 @@ function ProductDetail() {
   const { id } = useParams();
   const productId = parseInt(id);
   const navigate = useNavigate();
-  const { user } = useContext(UserContext);
+  const { user, user: {cartId} } = useContext(UserContext);
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -34,7 +34,7 @@ function ProductDetail() {
   }, [productId]);
 
   const handleAddtoCart = async () => {
-    if (!user || !user.id) {
+    if (!user || !cartId) {
       navigate("/login");
       return;
     }
@@ -56,7 +56,7 @@ function ProductDetail() {
     };
 
     try {
-      let response = await fetch(`http://localhost:3000/carts/${user.id}`);
+      let response = await fetch(`http://localhost:3000/carts/${cartId}`);
       let cart = await response.json();
 
       const existingProductIndex = cart.products.findIndex(
@@ -76,7 +76,7 @@ function ProductDetail() {
       }
 
       // Update the cart with the new products array
-      await fetch(`http://localhost:3000/carts/${user.id}`, {
+      await fetch(`http://localhost:3000/carts/${cartId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

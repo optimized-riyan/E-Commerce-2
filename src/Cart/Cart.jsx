@@ -7,7 +7,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const cartId = useContext(UserContext).user?.id ?? null;
+  const cartId = useContext(UserContext).user?.cartId ?? null;
   const [cart, setCart] = useState(null);
   const navigate = useNavigate();
 
@@ -22,9 +22,9 @@ const Cart = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:3000/carts?userId=${cartId}`);
+      const response = await axios.get(`http://localhost:3000/carts/${cartId}`);
       console.log(response.data);
-      setCart(response.data[0]);
+      setCart(response.data);
     } catch (error) {
       console.error("Error fetching cart details:", error);
     }

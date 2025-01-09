@@ -56,9 +56,13 @@ export default function SignUpForm() {
 
     async function onSuccess() {
         const userId = (await axios.get(`http://localhost:3000/users?email=${encodeURI(email)}`)).data[0].id;
-        axios.post('http://localhost:3000/carts', {
+        const {data: {id: cartId}} = await axios.post('http://localhost:3000/carts', {
             userId,     
-            products: []
+            products: [],
+            total: 0,
+            discountedTotal: 0,
+            totalProducts: 0,
+            totalQuantity: 0
         });
         const user = {
             id: userId,
@@ -66,7 +70,8 @@ export default function SignUpForm() {
             lastName: lName,
             username,
             email,
-            password
+            password,
+            cartId
         }
         localStorage.setItem('user', JSON.stringify(user));
         navigate('/');

@@ -15,16 +15,6 @@
           "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/1.png"
         },
         {
-          "id": 78,
-          "title": "Bedside Table African Cherry",
-          "price": 1999.99,
-          "quantity": 2,
-          "total": 3999.98,
-          "discountPercentage": 18.52,
-          "discountedTotal": 3259.18,
-          "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png"
-        },
-        {
           "id": 183,
           "title": "Green Oval Earring",
           "price": 24.99,
@@ -43,18 +33,31 @@
           "discountPercentage": 12.84,
           "discountedTotal": 566.5,
           "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+        },
+        {
+          "id": "2",
+          "title": "Bedside Table African Cherry",
+          "price": 2000,
+          "total": 2000,
+          "quantity": 1,
+          "discountPercentage": 8,
+          "discountedTotal": 1840,
+          "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/2.png"
         }
-      ]
+      ],
+      "total": 101774.87,
+      "discountedTotal": 88267.47,
+      "totalProducts": 4,
+      "totalQuantity": 14
     },
     {
-      "id": "d7f6",
-      "userId": "2332",
-      "products": []
-    },
-    {
-      "id": "6a8a",
-      "userId": "942f",
-      "products": []
+      "id": "cfe0",
+      "userId": "311b",
+      "products": [],
+      "total": 0,
+      "discountedTotal": 0,
+      "totalProducts": 0,
+      "totalQuantity": 0
     }
   ],
   "users": [
@@ -64,23 +67,16 @@
       "lastName": "Johnson",
       "email": "emily.johnson@x.com",
       "username": "emilys",
-      "password": "emilyspass"
+      "password": "emilyspass",
+      "cartId": "1"
     },
     {
-      "id": "2332",
+      "id": "311b",
       "firstName": "riyan",
       "lastName": "g",
       "username": "riyan",
       "email": "riyan0350@gmail.com",
       "password": "Riyan2112!"
-    },
-    {
-      "id": "942f",
-      "firstName": "Yash",
-      "lastName": "Pahlani",
-      "username": "yahs",
-      "email": "yash@gmail.com",
-      "password": "1234123$"
     }
   ],
   "products": [
