@@ -6,7 +6,7 @@ Team Member:
 - Niharika
 - Riyan Gonsalves
 - Saishree
-- Yash Pehlani
+- Yash Pahlani
 
 ## Pages
 
